@@ -2,16 +2,16 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Header from './Header'
 import Banner from './Banner'
-import Product from './Product'
+// import Product from './Product'
 import Contact from './Contact'
-import bat1 from '../assets/bat.jpg.jpg'
-import pad1 from '../assets/whitePads.jpg'
-import gloves1 from '../assets/gloves1.jpg'
-import bag1 from '../assets/bag4.jpg'
-import ball1 from '../assets/ball.jpg'
-import guard1 from '../assets/guard1.webp'
-import clothing1 from '../assets/clothing1.webp'
-import accessories1 from '../assets/servicesImg1.webp'
+import bat1 from '../image/bat4.jpg'
+import pad1 from '../image/whitePads.jpg'
+import gloves1 from '../image/gloves1.jpg'
+import bag1 from '../image/bag4.jpg'
+import ball1 from '../image/ball.jpg'
+import guard1 from '../image/gloves1.jpg'
+import clothing1 from '../image/G2.jpg'
+import accessories1 from '../image/G2.jpg'
 
 const Home = () => {
 
@@ -21,49 +21,49 @@ const Home = () => {
         id:1,
         title:"Bats",
         img:bat1,
-        link:"/bats",
+        link:"/products/bats",
       },
       {
         id:2,
         title:"Cricket Pads",
         img:pad1,
-        link:"/balls",
+        link:"/pads",
       },
       {
         id:3,
         title:"Gloves",
         img:gloves1,
-        link:"/bats",
+        link:"/gloves",
       },
       {
         id:4,
         title:"Kit Bags",
         img:bag1,
-        link:"/balls",
+        link:"/kitbags",
       },
       {
         id:5,
         title:"Balls",
         img:ball1,
-        link:"/bats",
+        link:"/products/balls",
       },
       {
         id:6,
         title:"All Guards",
         img:guard1,
-        link:"/bats",
+        link:"/guards",
       },
       {
         id:7,
         title:"Clothing",
         img:clothing1,
-        link:"/bats",
+        link:"/clothing",
       },
       {
         id:8,
         title:"Accessories",
         img:accessories1,
-        link:"/bats",
+        link:"/accessories",
       },
     ]
 
@@ -73,6 +73,7 @@ const Home = () => {
       <Header/>
     
       <Banner/>
+
       <div className='mt-28 max-w-full'>
         <h2 className="text-5xl font-bold mb-8 text-center">Featured Products</h2>
       
@@ -91,3 +92,4 @@ const Home = () => {
     </>
   )
 }
+ export default Home;
