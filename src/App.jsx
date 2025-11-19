@@ -1,12 +1,10 @@
 import React from 'react'
 import './App.css'
 import {Routes, Route } from "react-router-dom";
-// import Header from './Components/Header';
 import Product from './Components/Product';
 import Contact from './Components/Contact';
 import Home from './Components/Home';
 import Footer from './Components/Footer';
-import Banner from './Components/Banner';
 import Header from './Components/Header';
 import Bats from './Pages/Bats';
 import Services from './Components/Services';
