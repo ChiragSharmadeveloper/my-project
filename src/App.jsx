@@ -9,6 +9,8 @@ import Header from './Components/Header';
 import Bats from './Pages/Bats';
 import Services from './Components/Services';
 import Balls from './Pages/Balls';
+import  from './Components/Footer';
+
 
 function App() {
  
@@ -24,6 +26,23 @@ function App() {
         <Route path="/products/bats" element={<Bats/>}/>
         <Route path="/products/balls" element={<Balls/>}/> 
      </Routes>   
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/products" element={<Product />} />
+      <Route path="/contact" element={<Contact />} />
+
+
+      {/* Register */}
+    <Route path="/LogIn" element={<login />}/>
+ 
+ 
+ 
+    </Routes>
+    <Footer/>
+
+
+
+
 
    <Footer/> 
 
