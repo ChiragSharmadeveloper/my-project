@@ -57,7 +57,7 @@ const [open,setOpen]=useState(false);
       </Link>
 
       <Link
-        to="/signup"
+        to="/Register"
         className="block px-3 py-2 hover:bg-gray-100 rounded"
       >
         Sign Up

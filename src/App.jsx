@@ -1,17 +1,16 @@
 import React from 'react'
 import './App.css'
 import {Routes, Route } from "react-router-dom";
-// import Header from './Components/Header';
 import Product from './Components/Product';
 import Contact from './Components/Contact';
 import Home from './Components/Home';
 import Footer from './Components/Footer';
-import Banner from './Components/Banner';
 import Header from './Components/Header';
 import Bats from './Pages/Bats';
 import Services from './Components/Services';
 import Balls from './Pages/Balls';
-import  from './Components/Footer';
+import Login from './Register/logIn';
+import Register from './Register/signUp';
 
 
 function App() {
@@ -27,26 +26,15 @@ function App() {
        <Route path="/contact" element={<Contact />} /> 
         <Route path="/products/bats" element={<Bats/>}/>
         <Route path="/products/balls" element={<Balls/>}/> 
+
+
+        {/* Register Routes */}
+        <Route path="/Register" element={<Register/>}/>
+        <Route path="/Login" element={<Login/>}/>
      </Routes>   
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/products" element={<Product />} />
-      <Route path="/contact" element={<Contact />} />
-
-
-      {/* Register */}
-    <Route path="/LogIn" element={<login />}/>
- 
- 
- 
-    </Routes>
     <Footer/>
 
 
-
-
-
-   <Footer/> 
 
     </>
   )
