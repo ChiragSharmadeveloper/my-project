@@ -20,6 +20,10 @@ function App() {
     </Routes>
     <Footer/>
 
+
+
+
+
     
        {/* <Contact/>  */}
 
