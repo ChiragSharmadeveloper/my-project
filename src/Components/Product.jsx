@@ -1,48 +1,66 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import bat1 from '../image/bat4.jpg'
+import pad1 from '../image/whitePads.jpg'
+import gloves1 from '../image/gloves1.jpg'
+import bag1 from '../image/bag4.jpg'
+import ball1 from '../image/ball.jpg'
+import guard1 from '../image/gloves1.jpg'
+import clothing1 from '../image/G2.jpg'
+import accessories1 from '../image/G2.jpg'
 
 const Product = () => {
-    const cards = [
-      {
-        id:1,
-        title:"Product 1",
-        img:"https://images.unsplash.com/photo-1542291026-7eec264c27ff",
-      },
-      {
-        id:2,
-        title:"Product 2",
-        img:"https://images.unsplash.com/photo-1542291026-7eec264c27ff",
-      },
-      {
-        id:3,
-        title:"Product 3",
-        img:"https://images.unsplash.com/photo-1542291026-7eec264c27ff",
-      },
-      {
-        id:4,
-        title:"Product 4",
-        img:"https://images.unsplash.com/photo-1542291026-7eec264c27ff",
-      },
-      {
-        id:5,
-        title:"Product 5",
-        img:"https://images.unsplash.com/photo-1542291026-7eec264c27ff",
-      },
-      {
-        id:6,
-        title:"Product 6",
-        img:"https://images.unsplash.com/photo-1542291026-7eec264c27ff",
-      },
-      {
-        id:7,
-        title:"Product 7",
-        img:"https://images.unsplash.com/photo-1542291026-7eec264c27ff",
-      },
-      {
-        id:8,
-        title:"Product 8",
-        img:"https://images.unsplash.com/photo-1542291026-7eec264c27ff",
-      },
-    ]
+    const Products = [
+    
+          {
+            id:1,
+            title:"Bats",
+            img:bat1,
+            link:"/products/bats",
+          },
+          {
+            id:2,
+            title:"Cricket Pads",
+            img:pad1,
+            link:"/pads",
+          },
+          {
+            id:3,
+            title:"Gloves",
+            img:gloves1,
+            link:"/gloves",
+          },
+          {
+            id:4,
+            title:"Kit Bags",
+            img:bag1,
+            link:"/kitbags",
+          },
+          {
+            id:5,
+            title:"Balls",
+            img:ball1,
+            link:"/products/balls",
+          },
+          {
+            id:6,
+            title:"All Guards",
+            img:guard1,
+            link:"/guards",
+          },
+          {
+            id:7,
+            title:"Clothing",
+            img:clothing1,
+            link:"/clothing",
+          },
+          {
+            id:8,
+            title:"Accessories",
+            img:accessories1,
+            link:"/accessories",
+          },
+        ]
 
   return (
     <>
@@ -52,15 +70,16 @@ const Product = () => {
         <h2 className="text-5xl font-bold mb-8 text-center">Featured Products</h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-          {cards.map((item) => (
-            <div
-              key={item.id}
-              className="bg-white shadow-md rounded-lg p-4 hover:scale-110 transition cursor-pointer"
+          {Products.map((item) => (
+         <Link key={item.id} to={item.link}>
+       <div className="bg-white shadow-md rounded-lg p-4 hover:scale-110 transition cursor-pointer"
             >
               <img className="w-full h-44 object-cover rounded" src={item.img} />
               <h3 className="mt-3 font-semibold text-lg">{item.title}</h3>
             </div>
+            </Link>
           ))}
+        
         </div>
       </section> 
       
