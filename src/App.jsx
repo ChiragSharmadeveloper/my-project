@@ -38,8 +38,6 @@ function App() {
         <Route path="/products/guards" element={<Guards/>}/> 
         <Route path="/products/clothing" element={<Clothing/>}/>
         <Route path="/products/accessories" element={<Accessories/>}/> 
-    </Routes>
-    <Footer/>
 
 
 
