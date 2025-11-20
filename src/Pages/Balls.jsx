@@ -1,37 +1,44 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import bat1 from '../image/bat4.jpg'
-import bat2 from '../image/bat2.jpg'
-import bat3 from '../image/bat3.jpg'
-import bat4 from '../image/bat5.jpg'
+import ball1 from '../image/ball.jpg'
+import ball2 from '../image/ball.jpg'
+import ball3 from '../image/ball.jpg'
+import ball4 from '../image/ball.jpg'
+import ball5 from '../image/ball.jpg'
 
 const Balls = () => {
 
       const AllBalls = [
               {
                 id:1,
-                title:"Tennis Bats",
-                img:bat1,
+                title:"Soft Tennis Balls",
+                img:ball1,
                 // link:"/bats",
               },
               {
                 id:2,
-                title:"English Willow Bats",
-                img:bat2,
+                title:"Hard Tennis Balls",
+                img:ball2,
                 // link:"/balls",
               },
               {
                 id:3,
-                title:"Kashmir Willow Bats",
-                img:bat3,
+                title:"White Ball",
+                img:ball3,
                 // link:"/bats",
               },
               {
                 id:4,
-                title:"Catching Bats",
-                img:bat4,
+                title:"Red Ball",
+                img:ball4,
                 // link:"/balls",
               },
+              {
+                id:5,
+                title:"Pink Ball",
+                img:ball5,
+                // link:"/balls",
+              }
             ]
 
   return (
