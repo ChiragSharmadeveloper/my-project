@@ -40,17 +40,7 @@ function App() {
         <Route path="/products/accessories" element={<Accessories/>}/> 
     </Routes>
     <Footer/>
-
-
-
-        {/* Register Routes */}
-        <Route path="/Register" element={<Register/>}/>
-        <Route path="/Login" element={<Login/>}/>
-     </Routes>   
-    <Footer/>
-
-
-
+    
     </>
   )
 }
