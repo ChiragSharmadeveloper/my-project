@@ -9,8 +9,8 @@ import pad1 from '../image/whitePads.jpg'
 import gloves1 from '../image/gloves1.jpg'
 import bag1 from '../image/bag4.jpg'
 import ball1 from '../image/ball.jpg'
-import guard1 from '../image/gloves1.jpg'
-import clothing1 from '../image/G2.jpg'
+import guard1 from '../image/guard1.webp'
+import clothing1 from '../image/clothing1.webp'
 import accessories1 from '../image/G2.jpg'
 
 const Home = () => {
@@ -27,19 +27,19 @@ const Home = () => {
         id:2,
         title:"Cricket Pads",
         img:pad1,
-        link:"/pads",
+        link:"/products/pads",
       },
       {
         id:3,
         title:"Gloves",
         img:gloves1,
-        link:"/gloves",
+        link:"/products/gloves",
       },
       {
         id:4,
         title:"Kit Bags",
         img:bag1,
-        link:"/kitbags",
+        link:"/products/kitbags",
       },
       {
         id:5,
@@ -51,19 +51,19 @@ const Home = () => {
         id:6,
         title:"All Guards",
         img:guard1,
-        link:"/guards",
+        link:"/products/guards",
       },
       {
         id:7,
         title:"Clothing",
         img:clothing1,
-        link:"/clothing",
+        link:"/products/clothing",
       },
       {
         id:8,
         title:"Accessories",
         img:accessories1,
-        link:"/accessories",
+        link:"/products/accessories",
       },
     ]
 

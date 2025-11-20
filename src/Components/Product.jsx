@@ -67,7 +67,7 @@ const Product = () => {
 
       {/* PRODUCT CARDS */}
       <section id="products" className="py-16 max-w-7xl mx-auto px-6">
-        <h2 className="text-5xl font-bold mb-8 text-center">Featured Products</h2>
+        <h2 className="text-6xl font-bold m-8 text-center">All Products</h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           {Products.map((item) => (

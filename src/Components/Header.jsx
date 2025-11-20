@@ -28,7 +28,7 @@ const [open,setOpen]=useState(false);
             <ul className="hidden md:flex space-x-8 gap-24 font-bold text-lg">
               
       <Link to="/"><li className="hover:text-blue-600">Home</li></Link>
-    <Link to="">  <li className="hover:text-blue-600">Services</li></Link>
+    <Link to="/services">  <li className="hover:text-blue-600">Services</li></Link>
       <Link to="/products"><li className="hover:text-blue-600">Products</li></Link>
       <Link to="/contact"><li className="hover:text-blue-600">Contact</li></Link>
           </ul>
