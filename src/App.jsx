@@ -15,6 +15,9 @@ import KitBags from './Pages/KitBags';
 import Guards from './Pages/Guards';
 import Clothing from './Pages/Clothing';
 import Accessories from './Pages/Accessories';
+import Login from './Register/logIn';
+import Register from './Register/signUp';
+
 
 function App() {
  
@@ -37,6 +40,16 @@ function App() {
         <Route path="/products/accessories" element={<Accessories/>}/> 
     </Routes>
     <Footer/>
+
+
+
+        {/* Register Routes */}
+        <Route path="/Register" element={<Register/>}/>
+        <Route path="/Login" element={<Login/>}/>
+     </Routes>   
+    <Footer/>
+
+
 
     </>
   )
