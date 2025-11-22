@@ -71,10 +71,9 @@ const Home = () => {
   return (
     <>
       <Header/>
-    
       <Banner/>
 
-      <div className='mt-28 max-w-full'>
+      <div className="py-8 mx-auto px-6">
         <h2 className="text-5xl font-bold mb-8 text-center">Featured Products</h2>
       
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
