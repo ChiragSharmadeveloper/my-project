@@ -52,6 +52,7 @@ const Product = () => {
             id:7,
             title:"Clothing",
             img:clothing1,
+            link:"products/clothing",
             link:"/products/clothing",
           },
           {
