@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const Footer = () => {
   return (
     <>
@@ -32,13 +33,16 @@ const Footer = () => {
             <li>Size Guide</li>
           </ul>
           </div>
+    {/*  Company name and details */}
+          <p className='mt-16 text-lg font-semibold'>® 2022 — All Rights Reserved</p>
+          <p className=' text-lg font-semibold'>Email: babitasports5@gmail.com | Phone: +91 9997270808 </p>
+          <p className='text-4xl font-semibold'>© BABITA BHARDWAJ SPORTS </p>
 
-          <p className='mt-12 text-lg font-semibold'>© 2025 MyStore — All Rights Reserved</p>
-          <p className=' text-lg font-semibold'>Email: support@mystore.com | Phone: +91 98765 43210</p>
         </div>
       </footer>
-    </>
+  </>
   )
 }
+  
 
 export default Footer

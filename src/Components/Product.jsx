@@ -53,12 +53,13 @@ const Product = () => {
             title:"Clothing",
             img:clothing1,
             link:"products/clothing",
+            link:"/products/clothing",
           },
           {
             id:8,
             title:"Accessories",
             img:accessories1,
-            link:"/accessories",
+            link:"/products/accessories",
           },
         ]
 
