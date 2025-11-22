@@ -33,10 +33,10 @@ const Guards = () => {
 
   return (
     <div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 mt-24 sm:grid-cols-2 md:grid-cols-4 gap-8">
         {AllGuards.map((item) => (
   <Link key={item.id} to={item.link}>
-    <div className="p-2 shadow-md rounded-xl hover:scale-105 transition">
+    <div className="p-4 shadow-md rounded-xl hover:scale-105 transition">
       <img src={item.img} alt={item.title} className="w-full h-72 rounded-xl" />
       <h1 className="text-center mt-2 font-semibold text-xl">{item.title}</h1>
     </div>

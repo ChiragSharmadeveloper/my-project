@@ -1,15 +1,10 @@
 import React from 'react'
 
+
 const Footer = () => {
   return (
     <>
        {/* FOOTER */}
-<<<<<<< HEAD
-      <footer className="bg-black text-white py-8 bottom-0  mt-10">
-        <div className="max-w-7xl mx-auto px-6 text-center space-y-2">
-          <p>© 2025 MyStore — All Rights Reserved</p>
-          <p>Email: support@mystore.com | Phone: +91 98765 43210</p>
-=======
       <footer className="bg-black text-white p-8 mt-20">
         <div className="max-w-7xl mx-auto px-4 text-center">
           
@@ -38,14 +33,16 @@ const Footer = () => {
             <li>Size Guide</li>
           </ul>
           </div>
+    {/*  Company name and details */}
+          <p className='mt-16 text-lg font-semibold'>® 2022 — All Rights Reserved</p>
+          <p className=' text-lg font-semibold'>Email: babitasports5@gmail.com | Phone: +91 9997270808 </p>
+          <p className='text-4xl font-semibold'>© BABITA BHARDWAJ SPORTS </p>
 
-          <p className='mt-12 text-lg font-semibold'>© 2025 MyStore — All Rights Reserved</p>
-          <p className=' text-lg font-semibold'>Email: support@mystore.com | Phone: +91 98765 43210</p>
->>>>>>> 61403d496419af91e260fe6e577d3018b30e2075
         </div>
       </footer>
-    </>
+  </>
   )
 }
+  
 
 export default Footer

@@ -19,14 +19,14 @@ const Banner = () => {
   return (
     <>
        {/* HERO SLIDER */}
-      <section id="home" className="pt-20 w-full">
+      <section id="home" className="pt-20 mt-4 w-full">
         <div className="relative h-[500px] overflow-hidden">
           <div
             className="flex h-full transition-all duration-700"
             style={{ transform: `translateX(-${index * 100}%)` }}
           >
             {images.map((src, i) => (
-              <img key={i} className="w-[2000px] h-full object-cover" src={src} />
+              <img key={i} className="w-fit h-full object-cover" src={src} />
             ))}
           </div>
         </div>

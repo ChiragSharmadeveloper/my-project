@@ -38,23 +38,15 @@ function App() {
         <Route path="/products/guards" element={<Guards/>}/> 
         <Route path="/products/clothing" element={<Clothing/>}/>
         <Route path="/products/accessories" element={<Accessories/>}/> 
-<<<<<<< HEAD
-
 
 
         {/* Register Routes */}
         <Route path="/Register" element={<Register/>}/>
         <Route path="/Login" element={<Login/>}/>
-     </Routes>   
-    <Footer/>
 
-
-
-=======
-    </Routes>
+       </Routes>
     <Footer/>
     
->>>>>>> 61403d496419af91e260fe6e577d3018b30e2075
     </>
   )
 }
