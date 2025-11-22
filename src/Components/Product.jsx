@@ -22,19 +22,19 @@ const Product = () => {
             id:2,
             title:"Cricket Pads",
             img:pad1,
-            link:"/pads",
+            link:"/products/pads",
           },
           {
             id:3,
             title:"Gloves",
             img:gloves1,
-            link:"/gloves",
+            link:"/products/gloves",
           },
           {
             id:4,
             title:"Kit Bags",
             img:bag1,
-            link:"/kitbags",
+            link:"/products/kitbags",
           },
           {
             id:5,
@@ -46,13 +46,13 @@ const Product = () => {
             id:6,
             title:"All Guards",
             img:guard1,
-            link:"/guards",
+            link:"/products/guards",
           },
           {
             id:7,
             title:"Clothing",
             img:clothing1,
-            link:"/clothing",
+            link:"products/clothing",
           },
           {
             id:8,
