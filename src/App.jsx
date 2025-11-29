@@ -17,6 +17,21 @@ import Clothing from './Pages/Clothing';
 import Accessories from './Pages/Accessories';
 import Login from './Register/logIn';
 import Register from './Register/signUp';
+import AboutUs from './SubComponent/AboutUs';
+import Careers from './SubComponent/Career';
+import Cart from './SubComponent/Cart';
+import ContactUs from './SubComponent/ContactUs';
+import FAQs from './SubComponent/FAQs';
+import MyAccount from './SubComponent/MyAccount';
+import OffersDiscounts from './SubComponent/Offers';
+import TrackOrder from './SubComponent/Ordertracking';
+import PrivacyPolicy from './SubComponent/PrivacyPolicy';
+import ReturnRefundPolicy from './SubComponent/ReturnPolicy';
+import ShippingInfo from './SubComponent/ShippingInfo';
+import SizeGuide from './SubComponent/SizeGuide';
+import Terms from './SubComponent/Terms';
+import WarrantyClaims from './SubComponent/Warranty';
+import Wishlist from './SubComponent/Wishlist';
 
 
 function App() {
@@ -44,6 +59,23 @@ function App() {
         <Route path="/Register" element={<Register/>}/>
         <Route path="/Login" element={<Login/>}/>
 
+        {/* Sub Components of footer */}
+      <Route path="/AboutUs" element={<AboutUs/>}/>
+      <Route path="/Career" element={<Careers/>}/>
+      <Route path="/Cart" element={<Cart/>}/>
+      <Route path="/BBS/contactUs" element={<ContactUs/>}/>
+      <Route path="/FAQs" element={<FAQs/>}/>
+      <Route path="/BBS/MyAccount" element={<MyAccount/>}/>
+      <Route path="/Offers" element={<OffersDiscounts/>}/>
+      <Route path="/OrderTracking" element={<TrackOrder/>}/>
+      <Route path="/Privacy&Policy" element={<PrivacyPolicy/>}/>
+      <Route path="/ReturnPolicies" element={<ReturnRefundPolicy/>}/>
+      <Route path="/ShippingInfo" element={<ShippingInfo/>}/>
+      <Route path="/Guide" element={<SizeGuide/>}/>
+      <Route path="/Terms" element={<Terms/>}/>
+      <Route path="/Warranty" element={<WarrantyClaims/>}/>
+      <Route path="/Wishlist" element={<Wishlist/>}/>
+      <Route/>
        </Routes>
     <Footer/>
     
