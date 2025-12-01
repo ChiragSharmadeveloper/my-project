@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 
 const Footer = () => {
@@ -10,33 +11,33 @@ const Footer = () => {
           
           <div className='flex text-center gap-44'> 
           <ul className='leading-9 text-lg font-semibold'>
-            <li>About Us</li>
-            <li>Careers</li>
-            <li>Contact Us</li>
-            <li>Privacy Policy</li>
-            <li>Terms & Conditions</li>
+         <Link to=""><li>About Us</li></Link>
+         <Link to=""><li>Careers</li></Link>
+         <Link to=""><li>Contact Us</li></Link>
+         <Link to=""><li>Privacy Policy</li></Link>
+         <Link to=""><li>Terms & Conditions</li></Link>
           </ul>
 
           <ul className='leading-9 text-lg font-semibold'>
-            <li>Track Order</li>
-            <li>Return & Refund Policy</li>
-            <li>Shipping Information</li>
-            <li>FAQs</li>
-            <li>Warranty Claims</li>
+         <Link to=""><li>Track Order</li></Link>
+         <Link to=""><li>Return & Refund Policy</li></Link>
+         <Link to=""><li>Shipping Information</li></Link>
+         <Link to=""><li>FAQs</li></Link>
+         <Link to=""><li>Warranty Claims</li></Link>
           </ul>
 
           <ul className='ml-72 leading-9 text-lg font-semibold'>
-            <li>My Account</li>
-            <li>Cart</li>
-            <li>Wishlist</li>
-            <li>Offers & Discounts</li>
-            <li>Size Guide</li>
+         <Link to=""><li>My Account</li></Link>
+         <Link to=""><li>Cart</li></Link>
+         <Link to=""><li>Wishlist</li></Link>
+         <Link to=""><li>Offers & Discounts</li></Link>
+         <Link to=""><li>Size Guide</li></Link>
           </ul>
           </div>
     {/*  Company name and details */}
           <p className='mt-16 text-lg font-semibold'>® 2022 — All Rights Reserved</p>
           <p className=' text-lg font-semibold'>Email: babitasports5@gmail.com | Phone: +91 9997270808 </p>
-          <p className='text-4xl font-semibold'>© BABITA BHARDWAJ SPORTS </p>
+          <p className='text-3xl font-semibold'>© BABITA BHARDWAJ SPORTS </p>
 
         </div>
       </footer>
