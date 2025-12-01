@@ -29,11 +29,9 @@ name="access_key"
 value="7a907100-0d09-41a8-adc5-f7b1de221320"
 />
 
-
 <h2 className="text-2xl font-semibold text-center text-gray-800">
 Contact Us
 </h2>
-
 
 <input
 type="text"
@@ -43,7 +41,6 @@ placeholder="Enter Your Name"
 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 outline-none"
 />
 
-
 <input
 type="email"
 name="email"
@@ -52,7 +49,6 @@ placeholder="Enter Your E-mail"
 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 outline-none"
 />
 
-
 <textarea
 name="message"
 placeholder="Enter Your Comment"
@@ -60,9 +56,7 @@ required
 className="w-full px-4 py-3 h-32 border border-gray-300 rounded-lg resize-none focus:ring-blue-500 focus:border-blue-500 outline-none"
 ></textarea>
 
-
 <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html" />
-
 
 <button
 type="submit"
@@ -73,7 +67,6 @@ Submit
 </form>
 </div>
       
-
     </>
   )
 }
