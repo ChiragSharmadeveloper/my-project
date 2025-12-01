@@ -17,7 +17,7 @@ const Contact = () => {
         </div>
       </section> */}
 
-      <div className="bg-gray-100 mt-16 flex items-center justify-center min-h-screen p-4">
+      <div className="mt-16 flex items-center justify-center min-h-screen p-4">
 <form
 action="https://api.web3forms.com/submit"
 method="POST"

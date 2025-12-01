@@ -23,7 +23,7 @@ const Banner = () => {
   return (
     <>
        {/* HERO SLIDER */}
-      <section id="home" className="pt-20 mt-4 w-full">
+      <section id="home" className="pt-20 mt-2 w-full">
         <div className="relative h-[500px] overflow-hidden">
           <div
             className="flex h-full transition-all duration-700"

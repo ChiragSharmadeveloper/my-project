@@ -14,7 +14,8 @@ const [open,setOpen]=useState(false);
 
            {/* ✅ LOGO SECTION - UPDATED CSS */}
         <div className="flex items-center">
-          <Link to="/">
+          <Link to="/"
+           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
             <img
               src={BBS}
               alt="Logo"
