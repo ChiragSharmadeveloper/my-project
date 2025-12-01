@@ -23,7 +23,6 @@ const Banner = () => {
   return (
     <>
        {/* HERO SLIDER */}
-      <section id="home" className="pt-20 ">
       <section id="home" className="pt-20 mt-4 w-full">
         <div className="relative h-[500px] overflow-hidden">
           <div
@@ -31,7 +30,6 @@ const Banner = () => {
             style={{ transform: `translateX(-${index * 100}%)` }}
           >
             {images.map((src, i) => (
-              <img key={i} className="w-fit h-full" src={src} />
               <img key={i} className="w-fit h-full object-cover" src={src} />
             ))}
           </div>
