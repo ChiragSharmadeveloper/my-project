@@ -6,7 +6,7 @@ import gloves1 from '../image/gloves1.jpg'
 import bag1 from '../image/bag4.jpg'
 import ball1 from '../image/ball.jpg'
 import guard1 from '../image/gloves1.jpg'
-import clothing1 from '../image/G2.jpg'
+import clothing1 from '../image/clothing1.webp'
 import accessories1 from '../image/G2.jpg'
 
 const Product = () => {
@@ -52,7 +52,6 @@ const Product = () => {
             id:7,
             title:"Clothing",
             img:clothing1,
-            link:"products/clothing",
             link:"/products/clothing",
           },
           {
@@ -67,8 +66,17 @@ const Product = () => {
     <>
 
       {/* PRODUCT CARDS */}
-      <section id="products" className="py-16 max-w-7xl mx-auto px-6">
-        <h2 className="text-6xl font-bold m-8 text-center">All Products</h2>
+      <section id="products" className="py-24 max-w-7xl mx-auto px-6">
+        <ul className="mt-3 text-lg flex gap-32 p-2 pl-12 -ml-36 w-[1520px] m-8 text-black bg-blue-900">
+        <Link to="/products/bats"><li>Bats</li></Link>
+        <Link to="/products/pads"><li>Cricket Pads</li></Link>
+        <Link to="/products/gloves"><li>Gloves</li></Link>
+        <Link to="/products/kitbags"><li>Kit Bags</li></Link>
+        <Link to="/products/balls"><li>Balls</li></Link>
+        <Link to="/products/guards"><li>All Guards</li></Link>
+        <Link to="/products/clothing"><li>clothing</li></Link>
+        <Link to="/products/accessories"><li>Accessories</li></Link>
+        </ul>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           {Products.map((item) => (
