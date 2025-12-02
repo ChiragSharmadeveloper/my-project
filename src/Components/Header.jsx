@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from "react-router-dom";
 import BBS from "../assets/Mainlogo.png"
+import logIN from"../assets/login.jpeg"
 
 const Header = () => {
 const [open,setOpen]=useState(false);
@@ -39,11 +40,11 @@ const [open,setOpen]=useState(false);
   {/* Profile Button */}
   <button
     onClick={() => setOpen(!open)}
-    className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition"
+    className="p-1 rounded-full transition"
   >
     <img
-      src="https://cdn-icons-png.flaticon.com/512/847/847969.png"
-      className="w-7"
+      src={logIN}
+      className="w-16"
     />
   </button>
 
