@@ -14,6 +14,7 @@ const Footer = () => {
           <ul className='leading-9 text-lg font-semibold'>
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
          <Link to="/AboutUs"><li>About Us</li></Link>
          <Link to=""><li>Careers</li></Link>
          <Link to=""><li>Contact Us</li></Link>
@@ -22,12 +23,17 @@ const Footer = () => {
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
             <Link to="/AboutUs "><li>About Us</li></Link>
             <Link to="/Career "><li>Careers</li></Link>
             <Link to="/BBS/contactUs "><li>Contact Us</li></Link>
             <Link to="/Privacy&Policy "><li>Privacy Policy</li></Link>
             <Link to="/Terms "><li>Terms & Conditions</li></Link>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
