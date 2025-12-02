@@ -32,6 +32,7 @@ import SizeGuide from './SubComponent/SizeGuide';
 import Terms from './SubComponent/Terms';
 import WarrantyClaims from './SubComponent/Warranty';
 import Wishlist from './SubComponent/Wishlist';
+import FeaturedAth from './Components/FeaturedAth';
 
 
 function App() {
@@ -53,7 +54,7 @@ function App() {
         <Route path="/products/guards" element={<Guards/>}/> 
         <Route path="/products/clothing" element={<Clothing/>}/>
         <Route path="/products/accessories" element={<Accessories/>}/> 
-
+        <Route path="/featureAthlete" element={<FeaturedAth/>}/>
 
         {/* Register Routes */}
         <Route path="/Register" element={<Register/>}/>

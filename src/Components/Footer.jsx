@@ -8,16 +8,17 @@ const Footer = () => {
            {/* FOOTER */}
       <footer className="bg-black text-white p-8 mt-20">
         <div className="max-w-7xl mx-auto px-4 text-center"
+        // for behaviour of Website
          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
           
           <div className='flex text-center gap-44'> 
-          <ul className='leading-9 text-lg font-semibold'>
 
-            <Link to="/AboutUs "><li>About Us</li></Link>
-            <Link to="/Career "><li>Careers</li></Link>
-            <Link to="/BBS/contactUs "><li>Contact Us</li></Link>
-            <Link to="/Privacy&Policy "><li>Privacy Policy</li></Link>
-            <Link to="/Terms "><li>Terms & Conditions</li></Link>
+          <ul className='leading-9 text-lg font-semibold'>
+            <Link to="/AboutUs"><li>About Us</li></Link>
+            <Link to="/Career"><li>Careers</li></Link>
+            <Link to="/BBS/contactUs"><li>Contact Us</li></Link>
+            <Link to="/Privacy&Policy"><li>Privacy Policy</li></Link>
+            <Link to="/Terms"><li>Terms & Conditions</li></Link>
           </ul>
 
           <ul className='leading-9 text-lg font-semibold'>
