@@ -12,6 +12,8 @@ import ball1 from '../image/ball.jpg'
 import guard1 from '../image/guard1.webp'
 import clothing1 from '../image/clothing1.webp'
 import accessories1 from '../image/G2.jpg'
+import FeaturedAth from './FeaturedAth'
+
 
 const Home = () => {
 
@@ -87,6 +89,7 @@ const Home = () => {
 ))}
 </div>   
         </div>
+        <FeaturedAth/>
       <Contact/>
     </>
   )

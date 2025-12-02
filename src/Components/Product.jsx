@@ -67,7 +67,7 @@ const Product = () => {
 
       {/* PRODUCT CARDS */}
       <section id="products" className="py-24 max-w-7xl mx-auto px-6">
-        <ul className="mt-3 text-lg flex gap-32 p-2 pl-12 -ml-36 w-[1520px] m-8 text-black bg-blue-900">
+        <ul className="mt-3 text-lg flex gap-32 p-2 pl-12 -ml-36 w-[1520px] m-8 text-white bg-blue-900">
         <Link to="/products/bats"><li>Bats</li></Link>
         <Link to="/products/pads"><li>Cricket Pads</li></Link>
         <Link to="/products/gloves"><li>Gloves</li></Link>
@@ -83,7 +83,7 @@ const Product = () => {
          <Link key={item.id} to={item.link}>
        <div className="bg-white shadow-md rounded-lg p-4 hover:scale-110 transition cursor-pointer"
             >
-              <img className="w-full h-44 object-cover rounded" src={item.img} />
+              <img className="w-full h-48 object-cover rounded" src={item.img} />
               <h3 className="mt-3 font-semibold text-lg">{item.title}</h3>
             </div>
             </Link>
