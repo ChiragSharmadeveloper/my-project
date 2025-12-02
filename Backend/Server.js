@@ -1,9 +1,9 @@
 import express from 'express'
 import { mongoose } from 'mongoose';
  
-mongoose.connect('mongodb+srv://chiragsharmadeveloper:FFRjnLNEDiW9mUqM@cluster0.ohix3zw.mongodb.net/')
-.then(() =>('mongodb connected successfully '))
-.catch((err)=> console.error( 'Connection Faild ', err));
+// mongoose.connect('mongodb+srv://chiragsharmadeveloper:FFRjnLNEDiW9mUqM@cluster0.ohix3zw.mongodb.net/')
+// .then(() =>('mongodb connected successfully '))
+// .catch((err)=> console.error( 'Connection Faild ', err));
 
 
 const app=express();
