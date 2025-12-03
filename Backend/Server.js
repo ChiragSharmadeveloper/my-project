@@ -1,26 +1,24 @@
-import express from 'express'
-import { mongoose } from 'mongoose';
- 
-// mongoose.connect('mongodb+srv://chiragsharmadeveloper:FFRjnLNEDiW9mUqM@cluster0.ohix3zw.mongodb.net/')
-// .then(() =>('mongodb connected successfully '))
-// .catch((err)=> console.error( 'Connection Faild ', err));
+import express from "express";
+import mongoose from "mongoose";
+import dotenv from "dotenv";
+import userRoutes from "./routes/userRoutes.js";
 
+dotenv.config();
+const app = express();
 
-const app=express();
+// Middleware
+app.use(express.json());
 
-app.get('/', (req,res)=>{
-    res.send('Hello From Express')
-})
-app.get('/aboutUS', (req,res)=>{
-    res.send('Hello From about US')
-})
-app.get('/contactUS', (req,res)=>{
-    res.send('Hello From contact Us')
-})
-app.listen(3001, ()=>{
-    console.log('Server Started')
-})
+// Routes
+app.use("/users", userRoutes);
 
-
-// Db key 
-// mongodb+srv://chiragsharmadeveloper:FFRjnLNEDiW9mUqM@cluster0.ohix3zw.mongodb.net/
+// DB + Server start
+mongoose
+  .connect(process.env.MONGO_URI)
+  .then(() => {
+    console.log("MongoDB connected");
+    app.listen(process.env.PORT || 5000, () =>
+      console.log(`Server running on port ${process.env.PORT || 5000}`)
+    );
+  })
+  .catch((err) => console.log(err));
