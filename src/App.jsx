@@ -34,7 +34,11 @@ import WarrantyClaims from './SubComponent/Warranty';
 import Wishlist from './SubComponent/Wishlist'
 import FeaturedAth from './Components/FeaturedAth';
 import TennisBats from './SinglePages/TennisBats';
+<<<<<<< Updated upstream
 import AllTennisBats from './SinglePages/AllTennisBa
+=======
+import AllTennisBats from './SinglePages/AllTennisBats';
+>>>>>>> Stashed changes
 
 function App() {
  
@@ -56,6 +60,8 @@ function App() {
         <Route path="/products/clothing" element={<Clothing/>}/>
         <Route path="/products/accessories" element={<Accessories/>}/> 
         <Route path="/featureAthlete" element={<FeaturedAth/>}/>
+      <Route path="/tennisbats" element={<TennisBats/>}/>
+      <Route path="/alltennisbats" element={<AllTennisBats/>}/>
 
         {/* Register Routes */}
         <Route path="/Register" element={<Register/>}/>
