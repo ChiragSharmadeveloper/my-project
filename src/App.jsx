@@ -31,9 +31,10 @@ import ShippingInfo from './SubComponent/ShippingInfo';
 import SizeGuide from './SubComponent/SizeGuide';
 import Terms from './SubComponent/Terms';
 import WarrantyClaims from './SubComponent/Warranty';
-import Wishlist from './SubComponent/Wishlist';
+import Wishlist from './SubComponent/Wishlist'
 import FeaturedAth from './Components/FeaturedAth';
-
+import TennisBats from './SinglePages/TennisBats';
+import AllTennisBats from './SinglePages/AllTennisBa
 
 function App() {
  
@@ -76,6 +77,7 @@ function App() {
       <Route path="/Terms" element={<Terms/>}/>
       <Route path="/Warranty" element={<WarrantyClaims/>}/>
       <Route path="/Wishlist" element={<Wishlist/>}/>
+
       <Route/>
        </Routes>
     <Footer/>

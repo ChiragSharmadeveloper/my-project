@@ -12,7 +12,7 @@ const Bats = () => {
             id:1,
             title:"Tennis Bats",
             img:bat1,
-            // link:"/bats",
+            link:"/tennisbats",
           },
           {
             id:2,

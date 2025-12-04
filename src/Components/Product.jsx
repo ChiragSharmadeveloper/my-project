@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useContext } from "react";
+import { CartContext } from "../context/CartContext";
 import { Link } from 'react-router-dom'
 import bat1 from '../image/bat4.jpg'
 import pad1 from '../image/whitePads.jpg'
@@ -10,35 +11,41 @@ import clothing1 from '../image/clothing1.webp'
 import accessories1 from '../image/G2.jpg'
 
 const Product = () => {
-    const Products = [
-    
+  const {addToCart} = useContext(CartContext);
+
+    const Products = [  
           {
             id:1,
             title:"Bats",
             img:bat1,
+            price:"2000",
             link:"/products/bats",
           },
           {
             id:2,
             title:"Cricket Pads",
             img:pad1,
+            price:"2000",
             link:"/products/pads",
           },
           {
             id:3,
             title:"Gloves",
             img:gloves1,
+            price:"2000",
             link:"/products/gloves",
           },
           {
             id:4,
             title:"Kit Bags",
             img:bag1,
+            price:"2000",
             link:"/products/kitbags",
           },
           {
             id:5,
             title:"Balls",
+            price:"2000",
             img:ball1,
             link:"/products/balls",
           },
@@ -46,18 +53,21 @@ const Product = () => {
             id:6,
             title:"All Guards",
             img:guard1,
+            price:"2000",
             link:"/products/guards",
           },
           {
             id:7,
             title:"Clothing",
             img:clothing1,
+            price:"2000",
             link:"/products/clothing",
           },
           {
             id:8,
             title:"Accessories",
             img:accessories1,
+            price:"2000",
             link:"/products/accessories",
           },
         ]
@@ -85,6 +95,11 @@ const Product = () => {
             >
               <img className="w-full h-48 object-cover rounded" src={item.img} />
               <h3 className="mt-3 font-semibold text-lg">{item.title}</h3>
+              <h3 className="mt-3 font-semibold text-lg">{item.price}</h3>
+              <button onClick={()=> addToCart(item)}
+               className="mt-3 mb-40 bg-blue-600 text-white px-4 py-2 rounded-xl hover:bg-blue-700">
+                Add to Cart
+               </button>
             </div>
             </Link>
           ))}
