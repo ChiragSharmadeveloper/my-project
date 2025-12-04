@@ -35,7 +35,11 @@ import Wishlist from './SubComponent/Wishlist'
 import FeaturedAth from './Components/FeaturedAth';
 import TennisBats from './SinglePages/TennisBats';
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 import AllTennisBats from './SinglePages/AllTennisBa
+=======
+import AllTennisBats from './SinglePages/AllTennisBats';
+>>>>>>> Stashed changes
 =======
 import AllTennisBats from './SinglePages/AllTennisBats';
 >>>>>>> Stashed changes
