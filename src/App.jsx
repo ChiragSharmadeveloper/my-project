@@ -32,7 +32,13 @@ import SizeGuide from './SubComponent/SizeGuide';
 import Terms from './SubComponent/Terms';
 import WarrantyClaims from './SubComponent/Warranty';
 import Wishlist from './SubComponent/Wishlist';
+<<<<<<< Updated upstream
 
+=======
+import FeaturedAth from './Components/FeaturedAth';
+import TennisBats from './SinglePages/TennisBats';
+import AllTennisBats from './SinglePages/AllTennisBats';
+>>>>>>> Stashed changes
 
 function App() {
  
@@ -53,7 +59,13 @@ function App() {
         <Route path="/products/guards" element={<Guards/>}/> 
         <Route path="/products/clothing" element={<Clothing/>}/>
         <Route path="/products/accessories" element={<Accessories/>}/> 
+<<<<<<< Updated upstream
 
+=======
+        <Route path="/featureAthlete" element={<FeaturedAth/>}/>
+      <Route path="/tennisbats" element={<TennisBats/>}/>
+      <Route path="/alltennisbats" element={<AllTennisBats/>}/>
+>>>>>>> Stashed changes
 
         {/* Register Routes */}
         <Route path="/Register" element={<Register/>}/>
@@ -75,6 +87,7 @@ function App() {
       <Route path="/Terms" element={<Terms/>}/>
       <Route path="/Warranty" element={<WarrantyClaims/>}/>
       <Route path="/Wishlist" element={<Wishlist/>}/>
+
       <Route/>
        </Routes>
     <Footer/>
