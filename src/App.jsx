@@ -31,26 +31,10 @@ import ShippingInfo from './SubComponent/ShippingInfo';
 import SizeGuide from './SubComponent/SizeGuide';
 import Terms from './SubComponent/Terms';
 import WarrantyClaims from './SubComponent/Warranty';
-import Wishlist from './SubComponent/Wishlist';
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-
-=======
+import Wishlist from './SubComponent/Wishlist'
 import FeaturedAth from './Components/FeaturedAth';
 import TennisBats from './SinglePages/TennisBats';
-import AllTennisBats from './SinglePages/AllTennisBats';
->>>>>>> Stashed changes
-=======
-import FeaturedAth from './Components/FeaturedAth';
-import TennisBats from './SinglePages/TennisBats';
-import AllTennisBats from './SinglePages/AllTennisBats';
->>>>>>> Stashed changes
-=======
-import FeaturedAth from './Components/FeaturedAth';
-import TennisBats from './SinglePages/TennisBats';
-import AllTennisBats from './SinglePages/AllTennisBats';
->>>>>>> Stashed changes
+import AllTennisBats from './SinglePages/AllTennisBa
 
 function App() {
  
@@ -71,19 +55,7 @@ function App() {
         <Route path="/products/guards" element={<Guards/>}/> 
         <Route path="/products/clothing" element={<Clothing/>}/>
         <Route path="/products/accessories" element={<Accessories/>}/> 
-<<<<<<< Updated upstream
-
-=======
         <Route path="/featureAthlete" element={<FeaturedAth/>}/>
-      <Route path="/tennisbats" element={<TennisBats/>}/>
-      <Route path="/alltennisbats" element={<AllTennisBats/>}/>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 
         {/* Register Routes */}
         <Route path="/Register" element={<Register/>}/>

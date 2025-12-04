@@ -8,31 +8,33 @@ const Footer = () => {
            {/* FOOTER */}
       <footer className="bg-black text-white p-8 mt-20">
         <div className="max-w-7xl mx-auto px-4 text-center"
+        // for behaviour of Website
          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
           
           <div className='flex text-center gap-44'> 
+
           <ul className='leading-9 text-lg font-semibold'>
-         <Link to="/AboutUs"><li>About Us</li></Link>
-         <Link to=""><li>Careers</li></Link>
-         <Link to=""><li>Contact Us</li></Link>
-         <Link to=""><li>Privacy Policy</li></Link>
-         <Link to=""><li>Terms & Conditions</li></Link>
+            <Link to="/AboutUs"><li>About Us</li></Link>
+            <Link to="/Career"><li>Careers</li></Link>
+            <Link to="/BBS/contactUs"><li>Contact Us</li></Link>
+            <Link to="/Privacy&Policy"><li>Privacy Policy</li></Link>
+            <Link to="/Terms"><li>Terms & Conditions</li></Link>
           </ul>
 
           <ul className='leading-9 text-lg font-semibold'>
-         <Link to=""><li>Track Order</li></Link>
-         <Link to=""><li>Return & Refund Policy</li></Link>
-         <Link to=""><li>Shipping Information</li></Link>
-         <Link to=""><li>FAQs</li></Link>
-         <Link to=""><li>Warranty Claims</li></Link>
+         <Link to="/OrderTracking"><li>Track Order</li></Link>
+         <Link to="/ReturnPolicies"><li>Return & Refund Policy</li></Link>
+         <Link to="/ShippingInfo"><li>Shipping Information</li></Link>
+         <Link to="/FAQs"><li>FAQs</li></Link>
+         <Link to="/Warranty"><li>Warranty Claims</li></Link>
           </ul>
 
           <ul className='ml-72 leading-9 text-lg font-semibold'>
-         <Link to=""><li>My Account</li></Link>
-         <Link to=""><li>Cart</li></Link>
-         <Link to=""><li>Wishlist</li></Link>
-         <Link to=""><li>Offers & Discounts</li></Link>
-         <Link to=""><li>Size Guide</li></Link>
+         <Link to="/BBS/MyAccount"><li>My Account</li></Link>
+         <Link to="/Cart"><li>Cart</li></Link>
+         <Link to="/Wishlist"><li>Wishlist</li></Link>
+         <Link to="/Offers"><li>Offers & Discounts</li></Link>
+         <Link to="/Guide"><li>Size Guide</li></Link>
           </ul>
           </div>
 
