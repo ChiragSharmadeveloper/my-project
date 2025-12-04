@@ -33,7 +33,13 @@ import Terms from './SubComponent/Terms';
 import WarrantyClaims from './SubComponent/Warranty';
 import Wishlist from './SubComponent/Wishlist';
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
+=======
+import FeaturedAth from './Components/FeaturedAth';
+import TennisBats from './SinglePages/TennisBats';
+import AllTennisBats from './SinglePages/AllTennisBats';
+>>>>>>> Stashed changes
 =======
 import FeaturedAth from './Components/FeaturedAth';
 import TennisBats from './SinglePages/TennisBats';
@@ -65,6 +71,9 @@ function App() {
         <Route path="/featureAthlete" element={<FeaturedAth/>}/>
       <Route path="/tennisbats" element={<TennisBats/>}/>
       <Route path="/alltennisbats" element={<AllTennisBats/>}/>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
         {/* Register Routes */}
