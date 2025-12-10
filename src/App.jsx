@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import {Routes, Route } from "react-router-dom";
+import {BrowserRouter, Link, Routes, Route } from "react-router-dom";
 import Product from './Components/Product';
 import Contact from './Components/Contact';
 import Home from './Components/Home';
@@ -34,13 +34,15 @@ import WarrantyClaims from './SubComponent/Warranty';
 import Wishlist from './SubComponent/Wishlist'
 import FeaturedAth from './Components/FeaturedAth';
 import TennisBats from './SinglePages/TennisBats';
-import AllTennisBats from './SinglePages/AllTennisBa
-
+import AllTennisBats from './SinglePages/AllTennisBats';
+import { CartProvider } from "./context/CartContext";
 function App() {
  
   return (
-    <>  
 
+    <>  
+  
+    <CartProvider>
 <Header/>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -56,6 +58,8 @@ function App() {
         <Route path="/products/clothing" element={<Clothing/>}/>
         <Route path="/products/accessories" element={<Accessories/>}/> 
         <Route path="/featureAthlete" element={<FeaturedAth/>}/>
+      <Route path="/tennisbats" element={<TennisBats/>}/>
+      <Route path="/alltennisbats" element={<AllTennisBats/>}/>
 
         {/* Register Routes */}
         <Route path="/Register" element={<Register/>}/>
@@ -81,7 +85,7 @@ function App() {
       <Route/>
        </Routes>
     <Footer/>
-    
+    </CartProvider>
     </>
   )
 }
