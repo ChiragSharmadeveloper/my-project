@@ -16,21 +16,69 @@ const Bats = () => {
           },
           {
             id:2,
+            title:"Tennis Bats",
+            img:bat2,
+            link:"/tennisbats",
+          },
+          {
+            id:3,
+            title:"Tennis Bats",
+            img:bat3,
+            link:"/tennisbats",
+          },
+          {
+            id:4,
+            title:"Tennis Bats",
+            img:bat4,
+            link:"/tennisbats",
+          },
+          {
+            id:1,
+            title:"English Willow Bats",
+            img:bat1,
+            link:"/tennisbats",
+          },
+          {
+            id:2,
             title:"English Willow Bats",
             img:bat2,
-            // link:"/balls",
+            link:"/tennisbats",
+          },
+          {
+            id:3,
+            title:"English Willow Bats",
+            img:bat3,
+            link:"/tennisbats",
+          },
+          {
+            id:4,
+            title:"English Willow Bats",
+            img:bat4,
+            link:"/tennisbats",
+          },
+          {
+            id:1,
+            title:"Kashmir Willow Bats",
+            img:bat1,
+            link:"/tennisbats",
+          },
+          {
+            id:2,
+            title:"Kashmir Willow Bats",
+            img:bat2,
+            link:"/tennisbats",
           },
           {
             id:3,
             title:"Kashmir Willow Bats",
             img:bat3,
-            // link:"/bats",
+            link:"/tennisbats",
           },
           {
             id:4,
             title:"Catching Bats",
             img:bat4,
-            // link:"/balls",
+            link:"/tennisbats",
           },
         ]
 

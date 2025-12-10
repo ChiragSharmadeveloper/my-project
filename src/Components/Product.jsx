@@ -78,25 +78,25 @@ const Product = () => {
 
       {/* PRODUCT CARDS */}
       <section id="products" className="py-20 max-w-7xl mx-auto w-sm-[300px] w-md-[500px] w-lg-full px-6">
-        <ul className="mt-2 text-lg flex flex-wrap gap-4 p-1 pl-2 text-white bg-blue-900 
-                w-fit
+        <ul className="mt-2 flex flex-wrap gap-4 p-1 pl-2 font-bold text-black bg-gray-100 rounded-xl
+                w-full
                 sm:gap-4 sm:pl-2
                 md:gap-10 md:pl-6
-                lg:gap-22 lg:pl-6 lg:w-[1200px]">
-        <Link to="/products/bats"><li>Bats</li></Link>
-        <Link to="/products/pads"><li>Cricket Pads</li></Link>
-        <Link to="/products/gloves"><li>Gloves</li></Link>
-        <Link to="/products/kitbags"><li>Kit Bags</li></Link>
-        <Link to="/products/balls"><li>Balls</li></Link>
-        <Link to="/products/guards"><li>All Guards</li></Link>
-        <Link to="/products/clothing"><li>clothing</li></Link>
-        <Link to="/products/accessories"><li>Accessories</li></Link>
+                lg:gap-22 lg:pl-6 lg:w-[1200px] mb-2.5">
+        <Link to="/products/bats" className="hover:text-red-500"><li>Bats</li></Link>
+        <Link to="/products/pads" className="hover:text-red-500"><li>Cricket Pads</li></Link>
+        <Link to="/products/gloves" className="hover:text-red-500"><li>Gloves</li></Link>
+        <Link to="/products/kitbags" className="hover:text-red-500"><li>Kit Bags</li></Link>
+        <Link to="/products/balls" className="hover:text-red-500"><li>Balls</li></Link>
+        <Link to="/products/guards" className="hover:text-red-500"><li>All Guards</li></Link>
+        <Link to="/products/clothing" className="hover:text-red-500"><li>clothing</li></Link>
+        <Link to="/products/accessories" className="hover:text-red-500"><li>Accessories</li></Link>
         </ul>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           {productlist1.map((item) => (
          <Link key={item.id} to={item.link}>
-       <div className="bg-white rounded-lg p-4 hover:scale-105 transition cursor-pointer"
+       <div className="bg-white rounded-lg p-4 hover:scale-105  transition cursor-pointer"
             >
               <img className="w-full h-60 object-cover rounded" src={item.img} />
               <h3 className="mt-3 font-semibold text-xl">{item.title}</h3>
