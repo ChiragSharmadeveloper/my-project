@@ -77,12 +77,12 @@ const Product = () => {
     <>
 
       {/* PRODUCT CARDS */}
-      <section id="products" className="py-24 max-w-7xl mx-auto w-sm-[300px] w-md-[500px] w-lg-full px-6">
-        <ul className="mt-3 text-lg flex flex-wrap gap-6 p-2 pl-6 m-4 text-white bg-blue-900 
-                w-full 
-                sm:gap-4 sm:pl-4
-                md:gap-12 md:pl-8
-                lg:gap-28 lg:pl-8 lg:w-[1400px]">
+      <section id="products" className="py-20 max-w-7xl mx-auto w-sm-[300px] w-md-[500px] w-lg-full px-6">
+        <ul className="mt-2 text-lg flex flex-wrap gap-4 p-1 pl-2 text-white bg-blue-900 
+                w-fit
+                sm:gap-4 sm:pl-2
+                md:gap-10 md:pl-6
+                lg:gap-22 lg:pl-6 lg:w-[1200px]">
         <Link to="/products/bats"><li>Bats</li></Link>
         <Link to="/products/pads"><li>Cricket Pads</li></Link>
         <Link to="/products/gloves"><li>Gloves</li></Link>

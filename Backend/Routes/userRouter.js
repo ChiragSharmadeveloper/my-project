@@ -15,10 +15,10 @@ const router = express.Router();
 
 // Public
 router.post("/register", registerUser);
-router.post("/login", loginUser);
+// router.post("/login", loginUser);
 
 // Contact Us 
-router.post("/contact",protect, contactUs);
+// router.post("/contact",protect, contactUs);
 
 // Protected (Customer/Admin)
 router.get("/profile", protect, getUserProfile);

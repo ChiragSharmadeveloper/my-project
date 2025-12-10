@@ -38,4 +38,4 @@ export const CartProvider = ({children}) => {
   )
 }
 
-export default cartContext
+export default CartContext

@@ -1,73 +1,39 @@
 import User from "../Modals/userModal.js";
-import bcrypt from "bcryptjs";
+import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
+
 // ✅ Register new user
+export const registerUser=async(req,res)=>{
+    try{
+    const{name,email,password,phone}=req.body
+    
+    if (!name) res.status(404).send({message:"Name not found!"})
+        if(!email) res.status(404).send({message:"Email not found!"})
+            if (!password)res.status(404).send({message:"Password not found!"})
+            if (!phone)res.status(404).send({message:"Phone Number not found!"})
 
-export const registerUser = async (req, res) => {
-  try {
-    const { name, email, password, phone } = req.body;
+                 
+                // Regex Return
+    if(!emailRegex.test(email)) return res.status(400).send({message:"invalid email"})
+    if(!passwordRegex.test(password))return res.status(400).send({message:"Invalid Password" })            
 
-    // Check if all required fields are present
-    if (!name || !email || !password || !phone) {
-      return res.status(400).json({ message: "All fields are required (name, email, password, phone)" });
-    }
-  
-    // Email validation regex
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      return res.status(400).json({ message: "Invalid email format" });
-    }
+        let existUser=await User.findOne({email})
+        if(existUser) res.status(400).send({message:"User already registered"})
+        
+            let hashedPassword=await bcrypt.hash(password,10);
 
-    // Password validation regex (min 8 chars, at least 1 letter, 1 number)
-    const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
-    if (!passwordRegex.test(password)) {
-      return res.status(400).json({ 
-        message: "Password must be at least 8 characters long and contain at least 1 letter and 1 number" 
-      });
-    }
-
-    // Phone number validation (basic: 10 digits only)
-    const phoneRegex = /^[0-9]{10}$/;
-    if (!phoneRegex.test(phone)) {
-      return res.status(400).json({ message: "Phone number must be 10 digits" });
+        let newUser=await User.create({name,email,password:hashedPassword,phone})
+        res.status(201).send({message:"user registered successfully", newUser:newUser})
+}catch (err){
+    console.log(err)
+    res.status(500).send({message: "Error in register", err: err.message})
+}
     }
 
-    // Check if user already exists
-    const existingUser = await User.findOne({ email });
-    if (existingUser) {
-      return res.status(400).json({ message: "User already exists" });
-    }
-
-    // Hash password
-    const hashedPassword = await bcrypt.hash(password, 10);
-
-    const user = new User({
-      name,
-      email,
-      password: hashedPassword,
-      phone,
-    });
-
-    await user.save();
-
-    res.status(201).json({
-      message: "User registered successfully",
-      user: {
-        id: user._id,
-        name: user.name,
-        email: user.email,
-        phone: user.phone,
-        role: user.role,
-      },
-    });
-  } catch (error) {
-    res.status(500).json({ message: "Error registering user", error: error.message });
-  }
-};
 
 
-// ✅ Login user
+//  ✅ Login user
 export const loginUser = async (req, res) => {
   try {
     const { email, password } = req.body;
