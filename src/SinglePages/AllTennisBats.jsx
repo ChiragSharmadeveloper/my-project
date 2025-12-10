@@ -1,9 +1,11 @@
 import { React, useState } from 'react'
 import { Link } from 'react-router-dom'
-import bat1 from '../image/bat4.jpg'
-import bat2 from '../image/bat2.jpg'
+import bat1 from '../image/bat4.jpg'             //images for main product pages 
+import bat2 from '../image/bat2.jpg'         
 import bat3 from '../image/bat3.jpg'
 import bat4 from '../image/bat5.jpg'
+
+
 const AllTennisBats = () => {
 
     const images = [

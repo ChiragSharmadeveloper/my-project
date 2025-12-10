@@ -34,14 +34,14 @@ import WarrantyClaims from './SubComponent/Warranty';
 import Wishlist from './SubComponent/Wishlist'
 import FeaturedAth from './Components/FeaturedAth';
 import TennisBats from './SinglePages/TennisBats';
-import AllTennisBats from './SinglePages/AllTennisBa
+// import AllTennisBats from './SinglePages/AllTennisBat';
 
 function App() {
  
   return (
     <>  
 
-<Header/>
+    <Header/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
