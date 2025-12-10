@@ -9,6 +9,7 @@ import ball1 from '../image/ball.jpg'
 import guard1 from '../image/gloves1.jpg'
 import clothing1 from '../image/clothing1.webp'
 import accessories1 from '../image/G2.jpg'
+import { productlist1 } from "./ProductList";
 
 const Product = () => {
   const {addToCart} = useContext(CartContext);
@@ -76,8 +77,12 @@ const Product = () => {
     <>
 
       {/* PRODUCT CARDS */}
-      <section id="products" className="py-24 max-w-7xl mx-auto px-6">
-        <ul className="mt-3 text-lg flex gap-32 p-2 pl-12 -ml-36 w-[1520px] m-8 text-white bg-blue-900">
+      <section id="products" className="py-24 max-w-7xl mx-auto w-sm-[300px] w-md-[500px] w-lg-full px-6">
+        <ul className="mt-3 text-lg flex flex-wrap gap-6 p-2 pl-6 m-4 text-white bg-blue-900 
+                w-full 
+                sm:gap-4 sm:pl-4
+                md:gap-12 md:pl-8
+                lg:gap-28 lg:pl-8 lg:w-[1400px]">
         <Link to="/products/bats"><li>Bats</li></Link>
         <Link to="/products/pads"><li>Cricket Pads</li></Link>
         <Link to="/products/gloves"><li>Gloves</li></Link>
@@ -89,19 +94,15 @@ const Product = () => {
         </ul>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-          {Products.map((item) => (
+          {productlist1.map((item) => (
          <Link key={item.id} to={item.link}>
-       <div className="bg-white shadow-md rounded-lg p-4 hover:scale-110 transition cursor-pointer"
+       <div className="bg-white rounded-lg p-4 hover:scale-105 transition cursor-pointer"
             >
-              <img className="w-full h-48 object-cover rounded" src={item.img} />
-              <h3 className="mt-3 font-semibold text-lg">{item.title}</h3>
-              <h3 className="mt-3 font-semibold text-lg">{item.price}</h3>
-              <button onClick={()=> addToCart(item)}
-               className="mt-3 mb-40 bg-blue-600 text-white px-4 py-2 rounded-xl hover:bg-blue-700">
-                Add to Cart
-               </button>
+              <img className="w-full h-60 object-cover rounded" src={item.img} />
+              <h3 className="mt-3 font-semibold text-xl">{item.title}</h3>
+              <h3 className="mt-3 font-semibold text-xl">{item.price}</h3>
             </div>
-            </Link>
+            </Link> 
           ))}
         
         </div>

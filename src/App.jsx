@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import {Routes, Route } from "react-router-dom";
+import {BrowserRouter, Link, Routes, Route } from "react-router-dom";
 import Product from './Components/Product';
 import Contact from './Components/Contact';
 import Home from './Components/Home';
@@ -34,21 +34,15 @@ import WarrantyClaims from './SubComponent/Warranty';
 import Wishlist from './SubComponent/Wishlist'
 import FeaturedAth from './Components/FeaturedAth';
 import TennisBats from './SinglePages/TennisBats';
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-import AllTennisBats from './SinglePages/AllTennisBa
-=======
 import AllTennisBats from './SinglePages/AllTennisBats';
->>>>>>> Stashed changes
-=======
-import AllTennisBats from './SinglePages/AllTennisBats';
->>>>>>> Stashed changes
-
+import { CartProvider } from "./context/CartContext";
 function App() {
  
   return (
-    <>  
 
+    <>  
+  
+    <CartProvider>
 <Header/>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -91,7 +85,7 @@ function App() {
       <Route/>
        </Routes>
     <Footer/>
-    
+    </CartProvider>
     </>
   )
 }
