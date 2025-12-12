@@ -12,24 +12,56 @@ const Pads = () => {
               id:1,
               title:"Batting Pads",
               img:pad1,
+              price:"1800"
               // link:"/bats",
             },
             {
               id:2,
               title:"Keeping Pads",
               img:pad2,
+              price:"1800",
               // link:"/balls",
             },
             {
               id:3,
               title:"Thigh Pads",
               img:pad3,
+              price:"1800",
               // link:"/bats",
             },
             {
               id:4,
               title:"Fielding Pads",
               img:pad4,
+              price:"1800",
+              // link:"/balls",
+            },
+            {
+              id:5,
+              title:"Fielding Pads",
+              img:pad4,
+              price:"1800",
+              // link:"/balls",
+            },
+            {
+              id:6,
+              title:"Fielding Pads",
+              img:pad4,
+              price:"1800",
+              // link:"/balls",
+            },
+            {
+              id:7,
+              title:"Fielding Pads",
+              img:pad4,
+              price:"1800",
+              // link:"/balls",
+            },
+            {
+              id:8,
+              title:"Fielding Pads",
+              img:pad4,
+              price:"1800",
               // link:"/balls",
             },
           ]
@@ -46,6 +78,7 @@ const Pads = () => {
     </div>
   </Link>
 ))}
+
 </div>
 
     </>

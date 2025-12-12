@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import {productlist1} from "./ProductList";
 import { CartContext } from "../context/CartContext";
 
 const Cart = () => {
@@ -8,7 +9,7 @@ const Cart = () => {
 
   return (
     <>
-      <div className="p-6 bg-gray-50 rounded-lg shadow-md m-6">
+      <div className="p-6 bg-gray-50 rounded-lg shadow-md mt-96" >
       <h2 className="text-2xl font-bold mb-4">🛒 <span className="absolute -top-2 -right-2 bg-red-600 text-white text-xs rounded-full px-2">
         {totalCount}
       </span> </h2> 

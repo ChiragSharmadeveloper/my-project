@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { RiShoppingCart2Line } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import BBS from "../assets/Mainlogo.png"
 import logIN from"../assets/login.jpeg"
@@ -33,6 +34,7 @@ const [open,setOpen]=useState(false);
     <Link to="/services">  <li className="hover:text-blue-600">Services</li></Link>
       <Link to="/products"><li className="hover:text-blue-600">Products</li></Link>
       <Link to="/contact"><li className="hover:text-blue-600">Contact</li></Link>
+    <Link to="/checkout">  <RiShoppingCart2Line  className=''/> </Link>
           </ul>
 
           {/* Profile Dropdown */}

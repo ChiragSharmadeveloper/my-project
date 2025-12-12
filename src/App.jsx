@@ -19,7 +19,7 @@ import Login from './Register/logIn';
 import Register from './Register/signUp';
 import AboutUs from './SubComponent/AboutUs';
 import Careers from './SubComponent/Career';
-import Cart from './SubComponent/Cart';
+// import Cart from './SubComponent/Cart1';
 import ContactUs from './SubComponent/ContactUs';
 import FAQs from './SubComponent/FAQs';
 import MyAccount from './SubComponent/MyAccount';
@@ -33,15 +33,16 @@ import Terms from './SubComponent/Terms';
 import WarrantyClaims from './SubComponent/Warranty';
 import Wishlist from './SubComponent/Wishlist'
 import FeaturedAth from './Components/FeaturedAth';
-import TennisBats from './SinglePages/TennisBats';
+// import TennisBats from './SinglePages/TennisBats';
 import AllTennisBats from './SinglePages/AllTennisBats';
 import { CartProvider } from "./context/CartContext";
+import Cart from './Components/Cart';
 function App() {
  
   return (
 
     <>  
-  
+
     <CartProvider>
 <Header/>
       <Routes>
@@ -49,6 +50,7 @@ function App() {
         <Route path="/services" element={<Services />} />
        <Route path="/products" element={<Product />} /> 
        <Route path="/contact" element={<Contact />} /> 
+       <Route path="/checkout" element={<Cart/>}/>
         <Route path="/products/bats" element={<Bats/>}/>
         <Route path="/products/balls" element={<Balls/>}/> 
         <Route path="/products/pads" element={<Pads/>}/> 
@@ -58,7 +60,7 @@ function App() {
         <Route path="/products/clothing" element={<Clothing/>}/>
         <Route path="/products/accessories" element={<Accessories/>}/> 
         <Route path="/featureAthlete" element={<FeaturedAth/>}/>
-      <Route path="/tennisbats" element={<TennisBats/>}/>
+      {/* <Route path="/tennisbats" element={<TennisBats/>}/> */}
       <Route path="/alltennisbats" element={<AllTennisBats/>}/>
 
         {/* Register Routes */}
@@ -68,7 +70,7 @@ function App() {
         {/* Sub Components of footer */}
       <Route path="/AboutUs" element={<AboutUs/>}/>
       <Route path="/Career" element={<Careers/>}/>
-      <Route path="/Cart" element={<Cart/>}/>
+      {/* <Route path="/Cart" element={<Cart1/>}/> */}
       <Route path="/BBS/contactUs" element={<ContactUs/>}/>
       <Route path="/FAQs" element={<FAQs/>}/>
       <Route path="/BBS/MyAccount" element={<MyAccount/>}/>
