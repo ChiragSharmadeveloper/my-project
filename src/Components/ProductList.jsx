@@ -1,3 +1,14 @@
+import bats from '../image/bat4.jpg'
+import pads from '../image/whitePads.jpg'
+import gloves from '../image/gloves1.jpg'
+import kitbags from '../image/bag4.jpg'
+import ball from '../image/ball.jpg'
+import guard from '../image/guard1.webp'
+import bat1 from '../image/bat4.jpg'
+import bat2 from '../image/bat2.jpg'
+import bat3 from '../image/bat3.jpg'
+import bat4 from '../image/bat5.jpg'
+
 export const productlist1 = [
     {
                 id:1,
@@ -50,6 +61,9 @@ export const productlist1 = [
               },
 ]
 
-export const productlist2 = [
-
-]
+export const batimages = [
+        bat1,
+        bat2,
+        bat3,
+        bat4,
+];
