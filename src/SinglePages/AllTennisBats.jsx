@@ -8,9 +8,6 @@ import bat2 from '../image/bat2.jpg'
 import bat3 from '../image/bat3.jpg'
 import bat4 from '../image/bat5.jpg'
 
-
-const AllTennisBats = () => {
-
 const AllTennisBats = () => {
     const {addToCart} = useContext(CartContext);
     const [mainImage, setMainImage] = useState(batimages[0]);
