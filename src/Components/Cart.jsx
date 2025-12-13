@@ -15,7 +15,7 @@ const Cart = () => {
       </span> </h2> 
 
       {cartItems.length === 0 ? (
-        <p className="text-gray-500">Your cart is empty.</p>
+        <p className="text-gray-500 text-2xl">Your cart is empty.</p>
       ) : (
         <>
           {cartItems.map((item) => (
