@@ -9,7 +9,6 @@ import bat3 from '../image/bat3.jpg'
 import bat4 from '../image/bat5.jpg'
 
 
-const AllTennisBats = () => {
 
 const AllTennisBats = () => {
     const {addToCart} = useContext(CartContext);
@@ -24,7 +23,7 @@ const AllTennisBats = () => {
         <img
           src={mainImage}
           alt="Main"
-          className="w-full h-88 object-cover rounded-lg shadow-md"
+          className="w-full h-92 object-cover rounded-lg shadow-md"
         />
       </div>
 
@@ -37,21 +36,24 @@ const AllTennisBats = () => {
             src={img}
             alt="Thumbnail"
             onClick={() => setMainImage(img)}
-            className={`w-24 h-24 object-cover rounded-lg cursor-pointer border 
+            className={`w-32 h-32 object-cover rounded-lg cursor-pointer border 
               ${mainImage === img ? "border-blue-500" : "border-gray-300"} 
               hover:scale-105 transition`}
           />
-<button
+          </div>
+        ))}  
+      </div>
+      <div>
+        
+      </div>
+      <div>
+        <button
             onClick={() => addToCart(index)}
-            className="mt-3 mb-40 bg-blue-600 text-white px-4 py-2 rounded-xl hover:bg-blue-700"
-          >
+            className="mt-3 mb-40 pl-24 pr-24 bg-blue-600 text-white px-4 py-2 rounded-xl hover:bg-blue-700 " >
             Add to Cart
           </button>
-          </div>
-        ))}
-       
-      </div>
-      
+
+       </div>
     </div>
     </>
   )
