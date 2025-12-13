@@ -3,11 +3,6 @@ import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 import { Link } from 'react-router-dom'
 import { batimages } from '../Components/ProductList';
-import bat1 from '../image/bat4.jpg'             //images for main product pages 
-import bat2 from '../image/bat2.jpg'         
-import bat3 from '../image/bat3.jpg'
-import bat4 from '../image/bat5.jpg'
-
 
 
 const AllTennisBats = () => {
