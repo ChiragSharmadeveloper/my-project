@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 import { Link } from 'react-router-dom'
 import { batimages } from '../Components/ProductList';
+import SubHeader from '../context/SubHeader';
 
 
 const AllTennisBats = () => {
@@ -11,9 +12,13 @@ const AllTennisBats = () => {
 
   return (
     <>
+    {/* <SubHeader/> */}
 
-       <div className="w-full max-w-md mx-auto m-36">
-      {/* Main Image */}
+       <div className=" flex mt-28 mx-auto p-16 w-full mb-80">
+      
+{/* Left Div */}
+      <div className=' w-full h-80 mr-4'>                
+        {/* Main Image */}
       <div className="mb-4">
         <img
           src={mainImage}
@@ -38,9 +43,16 @@ const AllTennisBats = () => {
           </div>
         ))}  
       </div>
-      <div>
-        
-      </div>
+      </div> 
+
+      {/* Right Div */}
+      <div className=''>
+        {/* description */}
+        <div>
+          <h1></h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos quod eveniet modi ullam vel? Sapiente recusandae soluta beatae doloremque, voluptatum hic nostrum commodi voluptate reprehenderit, itaque eos! Voluptatum, odio ipsam?</p>
+        </div>
+        {/*  add to cart div */}
       <div>
         <button
             onClick={() => addToCart(index)}
@@ -49,6 +61,8 @@ const AllTennisBats = () => {
           </button>
 
        </div>
+      </div>
+
     </div>
     </>
   )
