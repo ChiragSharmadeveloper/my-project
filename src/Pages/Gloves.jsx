@@ -1,51 +1,34 @@
-import React from 'react'
+import React, {useContext} from 'react'
+import { CartContext } from '../context/CartContext';
 import { Link } from 'react-router-dom';
-import gloves1 from '../image/gloves1.jpg';
-import gloves2 from '../image/gloves2.jpg';
-import gloves3 from '../image/gloves4.jpg';
-import gloves4 from '../image/gloves5.jpg';
+import { AllGloves } from '../Components/ProductList';
 
 const Gloves = () => {
-
-     const AllGloves = [
-              {
-                id:1,
-                title:"Batting Gloves",
-                img:gloves1,
-                // link:"/bats",
-              },
-              {
-                id:2,
-                title:"Keeping Gloves",
-                img:gloves2,
-                // link:"/balls",
-              },
-              {
-                id:3,
-                title:"Premium Gloves",
-                img:gloves3,
-                // link:"/bats",
-              },
-              {
-                id:4,
-                title:"Kids Gloves",
-                img:gloves4,
-                // link:"/balls",
-              },
-            ]
+      const { addToCart } = useContext(CartContext);
 
   return (
     <>
-       <div className="grid grid-cols-1 mt-24 sm:grid-cols-2 md:grid-cols-4 gap-8">
-        {AllGloves.map((item) => (
-  <Link key={item.id} to={item.link}>
-    <div className="p-4 shadow-md rounded-xl hover:scale-105 transition">
-      <img src={item.img} alt={item.title} className="w-full h-72 rounded-xl" />
-      <h1 className="text-center mt-2 font-semibold text-xl">{item.title}</h1>
-    </div>
-  </Link>
-))}
-</div>
+
+     <div className="grid grid-cols-1 mt-24 sm:grid-cols-2 md:grid-cols-4 gap-8">
+             {AllGloves.map((item) => (
+               <div>
+       <Link key={item.id} to={item.link}>
+         <div className="p-4 rounded-xl hover:scale-105 transition">
+           <img src={item.img} alt={item.title} className="w-68 h-80 rounded-xl" />
+           <h1 className="text-start mt-2 ml-2 font-semibold text-xl">{item.title}</h1>
+           <h2 className="text-start mt-2 ml-2 font-semibold text-xl">{item.price}</h2>
+         </div>
+       </Link>
+       <button
+                 onClick={() => addToCart(item)}
+                 className="h-12 w-40 mt-3 mb-40 ml-8 bg-blue-600 text-white px-4 py-2 rounded-xl hover:bg-blue-700">
+                 Add to Cart
+               </button>
+               </div>
+     ))}
+
+     </div> 
+
     </>
   )
 }

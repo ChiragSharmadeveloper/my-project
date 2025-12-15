@@ -9,12 +9,11 @@ import bat4 from '../image/bat5.jpg'
 
 const Bats = () => {
   const { addToCart } = useContext(CartContext);
-
-     
-
+  
   return (
     <>
       
+
        <div className="grid grid-cols-1 mt-24 sm:grid-cols-2 md:grid-cols-4 gap-8">
         {AllBats.map((item) => (
           <div>
@@ -33,6 +32,7 @@ const Bats = () => {
           </div>
 ))}
 </div> 
+
 
     </>
   )
