@@ -1,24 +1,29 @@
-import { React, useState } from 'react'
-import { useContext } from "react";
+import React, { useState, useContext } from 'react'
 import { CartContext } from "../context/CartContext";
-import { Link } from 'react-router-dom'
 import { batimages } from '../Components/ProductList';
 import SubHeader from '../context/SubHeader';
 
 
 const AllTennisBats = () => {
-    const {addToCart} = useContext(CartContext);
-    const [mainImage, setMainImage] = useState(batimages[0]);
+
+  const { addToCart } = useContext(CartContext);
+  const [mainImage, setMainImage] = useState(batimages[0]);
+
+  const product = {
+    id: 101,
+    name: "Tennis Bat",
+    price: 1499,
+    img: mainImage,
+    quantity: 1,
+  };
 
   return (
     <>
     {/* <SubHeader/> */}
 
-       <div className=" flex mt-28 mx-auto p-16 w-full mb-80">
+     <div className="w-full max-w-md m-36">
       
-{/* Left Div */}
-      <div className=' w-full h-80 mr-4'>                
-        {/* Main Image */}
+      {/* Main Image */}
       <div className="mb-4">
         <img
           src={mainImage}
@@ -27,10 +32,9 @@ const AllTennisBats = () => {
         />
       </div>
 
-      {/* Thumbnail Images */}
+      {/* Thumbnails */}
       <div className="flex justify-between gap-4">
-        {batimages.slice(1).map((img, index) => (
-          <div>
+        {batimages.map((img, index) => (
           <img
             key={index}
             src={img}
@@ -40,30 +44,18 @@ const AllTennisBats = () => {
               ${mainImage === img ? "border-blue-500" : "border-gray-300"} 
               hover:scale-105 transition`}
           />
-          </div>
-        ))}  
-      </div>
-      </div> 
-
-      {/* Right Div */}
-      <div className=''>
-        {/* description */}
-        <div>
-          <h1></h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos quod eveniet modi ullam vel? Sapiente recusandae soluta beatae doloremque, voluptatum hic nostrum commodi voluptate reprehenderit, itaque eos! Voluptatum, odio ipsam?</p>
-        </div>
-        {/*  add to cart div */}
-      <div>
-        <button
-            onClick={() => addToCart(index)}
-            className="mt-3 mb-40 pl-24 pr-24 bg-blue-600 text-white px-4 py-2 rounded-xl hover:bg-blue-700 " >
-            Add to Cart
-          </button>
-
-       </div>
+        ))}
       </div>
 
+      {/* Add to Cart */}
+      <button
+        onClick={() => addToCart(product)}
+        className="mt-8 mb-40 ml-28 bg-blue-600 text-white px-4 py-2 rounded-xl h-12 w-60 font-semibold text-2xl hover:bg-blue-700"
+      >
+        Add to Cart
+      </button>
     </div>
+
     </>
   )
 }

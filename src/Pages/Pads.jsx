@@ -1,82 +1,30 @@
-import React from 'react'
+import React, {useContext} from 'react'
+import { CartContext } from '../context/CartContext';
+import {AllPads} from '../Components/ProductList'
 import { Link } from 'react-router-dom';
-import pad1 from '../image/blackPads.jpg'
-import pad2 from '../image/bluePads.jpg'
-import pad3 from '../image/whitePads.jpg'
-import pad4 from '../image/whitePads9.jpg'
 
 const Pads = () => {
-  
-  const AllPads = [
-            {
-              id:1,
-              title:"Batting Pads",
-              img:pad1,
-              price:"1800"
-              // link:"/bats",
-            },
-            {
-              id:2,
-              title:"Keeping Pads",
-              img:pad2,
-              price:"1800",
-              // link:"/balls",
-            },
-            {
-              id:3,
-              title:"Thigh Pads",
-              img:pad3,
-              price:"1800",
-              // link:"/bats",
-            },
-            {
-              id:4,
-              title:"Fielding Pads",
-              img:pad4,
-              price:"1800",
-              // link:"/balls",
-            },
-            {
-              id:5,
-              title:"Fielding Pads",
-              img:pad4,
-              price:"1800",
-              // link:"/balls",
-            },
-            {
-              id:6,
-              title:"Fielding Pads",
-              img:pad4,
-              price:"1800",
-              // link:"/balls",
-            },
-            {
-              id:7,
-              title:"Fielding Pads",
-              img:pad4,
-              price:"1800",
-              // link:"/balls",
-            },
-            {
-              id:8,
-              title:"Fielding Pads",
-              img:pad4,
-              price:"1800",
-              // link:"/balls",
-            },
-          ]
+    const { addToCart } = useContext(CartContext);
 
     return (
     <>
       
        <div className="grid grid-cols-1 mt-24 sm:grid-cols-2 md:grid-cols-4 gap-8">
         {AllPads.map((item) => (
+          <div>
   <Link key={item.id} to={item.link}>
-    <div className="p-4 shadow-md rounded-xl hover:scale-105 transition">
+    <div className="p-4 rounded-xl hover:scale-105 transition">
       <img src={item.img} alt={item.title} className="w-full h-72 rounded-xl" />
-      <h1 className="text-center mt-2 font-semibold text-xl">{item.title}</h1>
+      <h1 className="mt-2 font-semibold text-xl">{item.title}</h1>
+      <h1 className="mt-2 font-semibold text-xl">{item.price}</h1>
     </div>
   </Link>
+  <button
+            onClick={() => addToCart(item)}
+            className="mt-3 mb-40 ml-8 bg-blue-600 h-12 w-40 text-white px-4 py-2 rounded-xl hover:bg-blue-700">
+            Add to Cart
+          </button>
+          </div>
 ))}
 
 </div>

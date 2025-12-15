@@ -1,11 +1,14 @@
+import React, { useContext } from 'react'
 import { useState } from 'react'
 import { RiShoppingCart2Line } from "react-icons/ri";
+import { CartContext } from "../context/CartContext";
 import { Link } from "react-router-dom";
 import BBS from "../assets/Mainlogo.png"
 import logIN from"../assets/login.jpeg"
 
-const Header = () => {
+const Header = ({totalCount}) => {
 const [open,setOpen]=useState(false);
+const totalCount1 = useContext(CartContext).totalCount1;
 
 
   return (
@@ -34,7 +37,8 @@ const [open,setOpen]=useState(false);
     <Link to="/services">  <li className="hover:text-blue-600">Services</li></Link>
       <Link to="/products"><li className="hover:text-blue-600">Products</li></Link>
       <Link to="/contact"><li className="hover:text-blue-600">Contact</li></Link>
-    <Link to="/checkout">  <RiShoppingCart2Line  className=''/> </Link>
+            
+    <Link to="/checkout" className='rounded-2xl'>  <RiShoppingCart2Line  className='text-3xl'/> <span  className="absolute flex items-center justify-center -top-1 mt-8 ml-8  text-black text-xl w-5 h-5">{totalCount1}</span>  </Link>
           </ul>
 
           {/* Profile Dropdown */}

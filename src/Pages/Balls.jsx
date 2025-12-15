@@ -1,56 +1,30 @@
-import React from 'react'
+import React, {useContext} from 'react'
+import { CartContext } from '../context/CartContext';
 import { Link } from 'react-router-dom'
-import ball1 from '../image/ball.jpg'
-import ball2 from '../image/ball.jpg'
-import ball3 from '../image/ball.jpg'
-import ball4 from '../image/ball.jpg'
-import ball5 from '../image/ball.jpg'
+import { AllBalls } from '../Components/ProductList';
+
 
 const Balls = () => {
-
-      const AllBalls = [
-              {
-                id:1,
-                title:"Soft Tennis Balls",
-                img:ball1,
-                // link:"/bats",
-              },
-              {
-                id:2,
-                title:"Hard Tennis Balls",
-                img:ball2,
-                // link:"/balls",
-              },
-              {
-                id:3,
-                title:"White Ball",
-                img:ball3,
-                // link:"/bats",
-              },
-              {
-                id:4,
-                title:"Red Ball",
-                img:ball4,
-                // link:"/balls",
-              },
-              {
-                id:5,
-                title:"Pink Ball",
-                img:ball5,
-                // link:"/balls",
-              }
-            ]
+      const { addToCart } = useContext(CartContext);
 
   return (
     <>
     <div className="grid grid-cols-1 mt-24 sm:grid-cols-2 md:grid-cols-4 gap-8">
             {AllBalls.map((item) => (
+              <div>
       <Link key={item.id} to={item.link}>
-        <div className="p-4 shadow-md rounded-xl hover:scale-105 transition">
+        <div className="p-4 rounded-xl hover:scale-105 transition">
           <img src={item.img} alt={item.title} className="w-full h-72 rounded-xl" />
-          <h1 className="text-center mt-2 font-semibold text-xl">{item.title}</h1>
+          <h1 className=" mt-2 font-semibold text-2xl">{item.title}</h1>
+          <h1 className=" mt-2 font-semibold text-2xl">{item.price}</h1>
         </div>
       </Link>
+      <button
+            onClick={() => addToCart(item)}
+            className="h-12 w-40 mt-3 mb-40 ml-8 bg-blue-600 text-white px-4 py-2 rounded-xl hover:bg-blue-700">
+            Add to Cart
+          </button>
+      </div>
     ))}
     </div> 
       
