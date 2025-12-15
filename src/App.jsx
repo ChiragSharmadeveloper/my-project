@@ -37,6 +37,7 @@ import FeaturedAth from './Components/FeaturedAth';
 import AllTennisBats from './SinglePages/AllTennisBats';
 import { CartProvider } from "./context/CartContext";
 import Cart from './Components/Cart';
+import SubHeader from './context/SubHeader';
 function App() {
  
   return (
@@ -63,9 +64,14 @@ function App() {
       {/* <Route path="/tennisbats" element={<TennisBats/>}/> */}
       <Route path="/alltennisbats" element={<AllTennisBats/>}/>
 
+      {/* Sub Header      */}
+      {/* for importing in every in every product  */}
+      <Route path='/product/SubHeader' element={<SubHeader/>}/>    
+
         {/* Register Routes */}
         <Route path="/Register" element={<Register/>}/>
         <Route path="/Login" element={<Login/>}/>
+
 
         {/* Sub Components of footer */}
       <Route path="/AboutUs" element={<AboutUs/>}/>

@@ -1,6 +1,8 @@
 import React, { useState, useContext } from 'react'
 import { CartContext } from "../context/CartContext";
 import { batimages } from '../Components/ProductList';
+import SubHeader from '../context/SubHeader';
+
 
 const AllTennisBats = () => {
 
@@ -17,6 +19,7 @@ const AllTennisBats = () => {
 
   return (
     <>
+    {/* <SubHeader/> */}
 
      <div className="w-full max-w-md m-36">
       
@@ -25,7 +28,7 @@ const AllTennisBats = () => {
         <img
           src={mainImage}
           alt="Main"
-          className="w-full h-88 object-cover rounded-lg shadow-md"
+          className="w-full h-92 object-cover rounded-lg shadow-md"
         />
       </div>
 
@@ -37,7 +40,7 @@ const AllTennisBats = () => {
             src={img}
             alt="Thumbnail"
             onClick={() => setMainImage(img)}
-            className={`w-24 h-24 object-cover rounded-lg cursor-pointer border 
+            className={`w-32 h-32 object-cover rounded-lg cursor-pointer border 
               ${mainImage === img ? "border-blue-500" : "border-gray-300"} 
               hover:scale-105 transition`}
           />

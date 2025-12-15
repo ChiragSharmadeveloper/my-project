@@ -1,14 +1,17 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import BannerSlide from '../image/BannerSlide.webp';
+import Black from'../image/Blogo.jpg' 
+import Opening from '../image/Opening.jpg'
+import Prmpads from '../image/Premium pads.jpg'
 
 const Banner = () => {
 
   const [index, setIndex] = useState(0);
   
   const images = [
-    BannerSlide,
-    BannerSlide,
+    Black,
+    Opening,
     BannerSlide,
 
   ];
