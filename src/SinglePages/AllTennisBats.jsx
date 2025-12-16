@@ -1,8 +1,6 @@
 import React, { useState, useContext } from 'react'
 import { CartContext } from "../context/CartContext";
 import { batimages } from '../Components/ProductList';
-import SubHeader from '../context/SubHeader';
-
 
 const AllTennisBats = () => {
 
@@ -10,16 +8,15 @@ const AllTennisBats = () => {
   const [mainImage, setMainImage] = useState(batimages[0]);
 
   const product = {
-    id: 101,
-    name: "Tennis Bat",
+    id: 1,
+    title: "Tennis Bat",
     price: 1499,
     img: mainImage,
-    quantity: 1,
+    productDetails:" Lightweight kashmir willow Cricket Bat for all catogery " ,
   };
 
   return (
     <>
-    {/* <SubHeader/> */}
 
      <div className="w-full max-w-md m-36">
       
@@ -34,7 +31,7 @@ const AllTennisBats = () => {
 
       {/* Thumbnails */}
       <div className="flex justify-between gap-4">
-        {batimages.map((img, index) => (
+        {batimages.slice(1).map((img, index) => (
           <img
             key={index}
             src={img}
@@ -45,16 +42,21 @@ const AllTennisBats = () => {
               hover:scale-105 transition`}
           />
         ))}
-      </div>
+        
+</div>
 
       {/* Add to Cart */}
       <button
         onClick={() => addToCart(product)}
-        className="mt-8 mb-40 ml-28 bg-blue-600 text-white px-4 py-2 rounded-xl h-12 w-60 font-semibold text-2xl hover:bg-blue-700"
+        className="mt-8 ml-28 hover:bg-blue-600 text-black rounded-xl h-12 w-60 font-semibold text-xl bg-yellow-500"
       >
         Add to Cart
       </button>
     </div>
+    <div className=''>
+        <h1 className='text-xl font-semibold'>{product.productDetails}</h1>
+      </div>
+
 
     </>
   )
