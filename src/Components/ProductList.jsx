@@ -28,8 +28,6 @@ import ball4 from '../image/ball.jpg'
 import ball5 from '../image/ball.jpg'
 import guard1 from '../image/guard1.webp'
 
-
-
 export const productlist1 = [
     {
                 id:1,
@@ -93,7 +91,6 @@ export const batimages = [
           bat1,
           bat2,
           bat3,
-          bat4,
           bat4,
 ];
 
