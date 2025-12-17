@@ -35,7 +35,7 @@ const totalCount1 = useContext(CartContext).totalCount1;
               
       <Link to="/"><li className="hover:text-blue-600">Home</li></Link>
     <Link to="/services">  <li className="hover:text-blue-600">Services</li></Link>
-      <Link to="/products"><li className="hover:text-blue-600">Products</li></Link>
+      <Link to="/products"><li className="hover:text-blue-600">Featured Products</li></Link>
       <Link to="/contact"><li className="hover:text-blue-600">Contact</li></Link>
             
     <Link to="/checkout" className='rounded-2xl'>  <RiShoppingCart2Line  className='text-3xl'/> <span  className="absolute flex items-center justify-center -top-1 mt-8 ml-8  text-black text-xl w-5 h-5">{totalCount1}</span>  </Link>

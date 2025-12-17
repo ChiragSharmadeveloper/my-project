@@ -100,12 +100,7 @@ export const AllBats = [
             title:"Kashmir Willow Bats",
             img:bat1,
             price:"3500",
-            productDetails:" Lightweight kashmir willow Cricket Bat for all catogery " ,
-            Size:[{ label: "S", stock: 10 },
-                  { label: "M", stock: 5 },
-                  { label: "L", stock: 0 },] ,
-            about:" Lightweight Kashmir Willow wood for Soft & Hard tennies , with around 980gm - 1200gm , with dotted grip and bat cover ",      
-            link:"/alltennisbats",
+           link:"/alltennisbats",
           },
           {
             id:2,

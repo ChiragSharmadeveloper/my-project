@@ -9,16 +9,20 @@ const AllTennisBats = () => {
 
   const product = {
     id: 1,
-    title: "Tennis Bat",
-    price: 1499,
+    title: "Kashmir Willow Bat",
+    price: 3499,
     img: mainImage,
     productDetails:" Lightweight kashmir willow Cricket Bat for all catogery " ,
-  };
+    Size:[{ label: "Kids", stock: 10 },
+          { label: "Adults", stock: 5 },
+          { label: "Mens", stock: 10 },] ,
+    about:" Lightweight Kashmir Willow wood for Soft & Hard tennies , with around 980gm - 1200gm , with dotted grip and bat cover ",      
+           };
 
   return (
     <>
-
-     <div className="w-full max-w-md m-36">
+<div className='flex' >
+     <div className="w-full max-w-md m-32">
       
       {/* Main Image */}
       <div className="mb-4">
@@ -41,22 +45,39 @@ const AllTennisBats = () => {
               ${mainImage === img ? "border-blue-500" : "border-gray-300"} 
               hover:scale-105 transition`}
           />
+        
         ))}
         
+        
+
 </div>
 
-      {/* Add to Cart */}
+     
+
+    </div>
+
+    <div className='mt-32 w-[40%] mr-5 text-start space-y-3'>
+        <h1 className='text-3xl  font-bold '>{product.title}</h1>
+
+        <h1 className='text-3xl font-bold  '>{product.productDetails}</h1>
+        <h1 className='text-4xl font-bold text-red-500'> ₹ {product.price}</h1>
+
+
+         {/* Add to Cart */}
       <button
         onClick={() => addToCart(product)}
-        className="mt-8 ml-28 hover:bg-blue-600 text-black rounded-xl h-12 w-60 font-semibold text-xl bg-yellow-500"
+        className="mt-8 ml-28 hover:bg-blue-600 text-black rounded-xl mb-7 h-12 w-80 font-semibold text-xl bg-yellow-500"
       >
-        Add to Cart
+        Buy Now
       </button>
-    </div>
-    <div className=''>
-        <h1 className='text-xl font-semibold'>{product.productDetails}</h1>
+
+
+        {/* <h1 className='text-xl font-semibold'>{product.label[0]}</h1> */}
+        <h1 className='text-xl '>{product.about}</h1>
       </div>
 
+     
+   </div>
 
     </>
   )
