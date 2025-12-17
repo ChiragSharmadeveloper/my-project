@@ -8,6 +8,9 @@ const AllTennisBats = () => {
   const [mainImage, setMainImage] = useState(batimages[0]);
 
   const product = {
+    id: 1001,
+    title: "Tennis Bat",
+    price: 3500,
     id: 1,
     title: "Kashmir Willow Bat",
     price: 3499,
