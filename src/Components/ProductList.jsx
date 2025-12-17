@@ -106,6 +106,7 @@ export const AllBats = [
                   { label: "L", stock: 0 },] ,
             about:" Lightweight Kashmir Willow wood for Soft & Hard tennies , with around 980gm - 1200gm , with dotted grip and bat cover ",      
             link:"/scooptennis",
+           link:"/alltennisbats",
           },
           {
             id:2,
