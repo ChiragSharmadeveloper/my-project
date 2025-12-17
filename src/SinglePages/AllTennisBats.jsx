@@ -8,9 +8,9 @@ const AllTennisBats = () => {
   const [mainImage, setMainImage] = useState(batimages[0]);
 
   const product = {
-    id: 1,
+    id: 1001,
     title: "Tennis Bat",
-    price: 1499,
+    price: 3500,
     img: mainImage,
     productDetails:" Lightweight kashmir willow Cricket Bat for all catogery " ,
   };
