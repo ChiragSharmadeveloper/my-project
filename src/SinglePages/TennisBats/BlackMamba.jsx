@@ -1,6 +1,8 @@
 import React, { useState, useContext } from 'react'
 import { CartContext } from "../../context/CartContext";
+import {Link } from 'react-router-dom'
 import { batimages } from '../../Components/ProductList';
+import similar1 from '../../image/bat13.jpg'
 
 const BlackMamba = () => {
     const { addToCart } = useContext(CartContext);
@@ -59,6 +61,12 @@ const BlackMamba = () => {
             >
               Add to Cart
             </button>
+            </div>
+
+            <div className='flex  gap-20 mt-20 mx-[450px]'>
+         <Link to="/blackmamba"><img src={similar1} alt={product.title} className='w-36 gap-20 h-32 rounded-lg cursor-pointer hover:scale-105 transition' /></Link>
+         <Link to="/singleblade"><img src={similar1} alt={product.title} className='w-36 gap-20 h-32 rounded-lg cursor-pointer hover:scale-105 transition' /></Link>
+         <Link to="/doubleblade"><img src={similar1} alt={product.title} className='w-36 gap-20 h-32 rounded-lg cursor-pointer hover:scale-105 transition' /></Link>
             </div>
 
     </>
