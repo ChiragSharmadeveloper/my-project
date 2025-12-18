@@ -44,13 +44,7 @@ const SS25 = () => {
           />
         
         ))}
-        
-        
-
 </div>
-
-     
-
     </div>
 
     <div className='mt-32 w-[40%] mr-5 text-start space-y-3'>
