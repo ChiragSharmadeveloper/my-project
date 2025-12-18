@@ -1,13 +1,14 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const SubHeader = () => {
   return (
-    <div>
-        <ul className="mt-2 flex flex-wrap gap-4 p-1 ml-16 pl-2 font-bold text-black bg-gray-300 rounded-xl
+    <div className='mb-40'>
+        <ul className="flex flex-wrap gap-4 p-1 ml-44  pl-2 font-bold text-black bg-gray-300 rounded-xl
                 w-full
                 sm:gap-4 sm:pl-2
                 md:gap-10 md:pl-6
-                lg:gap-22 lg:pl-6 lg:w-[1200px] mb-2.5 fixed z-1000" >
+                lg:gap-22 lg:pl-6 lg:w-[1200px] fixed z-1000" >
         <Link to="/products/bats" className="hover:text-red-500"><li>Bats</li></Link>
         <Link to="/products/pads" className="hover:text-red-500"><li>Cricket Pads</li></Link>
         <Link to="/products/gloves" className="hover:text-red-500"><li>Gloves</li></Link>
