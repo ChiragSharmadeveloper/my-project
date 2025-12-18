@@ -28,6 +28,7 @@ import ball4 from '../image/ball.jpg'
 import ball5 from '../image/ball.jpg'
 import guard1 from '../image/guard1.webp'
 
+
 export const productlist1 = [
     {
                 id:1,
@@ -92,6 +93,13 @@ export const batimages = [
           bat2,
           bat3,
           bat4,
+];
+
+export const ballimages = [
+  ball1,
+  ball2,
+  ball3,
+  ball4,
 ];
 
 export const AllBats = [
@@ -349,57 +357,57 @@ export const AllBats = [
                 id:1,
                 title:"Soft Tennis Balls",
                 img:ball1,
-                price:"200"
-                // link:"/bats",
+                price:"200",
+                link:"/clubRed",
               },
               {
                 id:2,
                 title:"Hard Tennis Balls",
                 img:ball2,
                 price:"300",
-                // link:"/balls",
+                link:"/testRed",
               },
               {
                 id:3,
                 title:"White Ball",
                 img:ball3,
                 price:"400",
-                // link:"/bats",
+                link:"/superTest",
               },
               {
                 id:4,
                 title:"Red Ball",
                 img:ball4,
                 price:"500",
-                // link:"/balls",
+                link:"/countyRed",
               },
               {
                 id:5,
                 title:"Pink Ball",
                 img:ball5,
                 price:"600",
-                // link:"/balls",
+                link:"/clubWhite",
               },
               {
                 id:6,
                 title:"Pink Ball",
                 img:ball5,
                 price:"700",
-                // link:"/balls",
+                link:"/testWhite",
               },
               {
                 id:7,
                 title:"Pink Ball",
                 img:ball5,
                 price:"800",
-                // link:"/balls",
+                link:"/superWhite",
               },
               {
                 id:8,
                 title:"Pink Ball",
                 img:ball5,
                 price:"900",
-                // link:"/balls",
+                link:"/countyWhite",
               },
 
             ]
