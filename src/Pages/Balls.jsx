@@ -18,12 +18,12 @@ const Balls = () => {
           <h1 className=" mt-2 font-semibold text-2xl">{item.title}</h1>
           <h1 className=" mt-2 font-semibold text-2xl">{item.price}</h1>
         </div>
-      </Link>
       <button
-            onClick={() => addToCart(item)}
             className="h-12 w-40 mt-3 mb-40 ml-8 bg-blue-600 text-white px-4 py-2 rounded-xl hover:bg-blue-700">
-            Add to Cart
+            More Details
           </button>
+      </Link>
+
       </div>
     ))}
     </div> 

@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import {BrowserRouter, Link, Routes, Route } from "react-router-dom";
+import { Link, Routes, Route } from "react-router-dom";
 import Product from './Components/Product';
 import Contact from './Components/Contact';
 import Home from './Components/Home';
@@ -19,7 +19,6 @@ import Login from './Register/logIn';
 import Register from './Register/signUp';
 import AboutUs from './SubComponent/AboutUs';
 import Careers from './SubComponent/Career';
-// import Cart from './SubComponent/Cart1';
 import ContactUs from './SubComponent/ContactUs';
 import FAQs from './SubComponent/FAQs';
 import MyAccount from './SubComponent/MyAccount';
@@ -33,8 +32,6 @@ import Terms from './SubComponent/Terms';
 import WarrantyClaims from './SubComponent/Warranty';
 import Wishlist from './SubComponent/Wishlist'
 import FeaturedAth from './Components/FeaturedAth';
-// import TennisBats from './SinglePages/TennisBats';
-// import AllTennisBats from './SinglePages/AllTennisBats';
 import { CartProvider } from "./context/CartContext";
 import Cart from './Components/Cart';
 import SubHeader from './context/SubHeader';
@@ -50,6 +47,14 @@ import BB20 from './SinglePages/LeatherBats/BB20';
 import MS19 from './SinglePages/LeatherBats/MS19';
 import SS25 from './SinglePages/LeatherBats/SS25';
 import RJ14 from './SinglePages/LeatherBats/RJ14';
+import ClubRed from './SinglePages/AllBalls/ClubRed';
+import TestRed from './SinglePages/AllBalls/TestRed';
+import SuperTest from './SinglePages/AllBalls/SuperTest';
+import CountyRed from './SinglePages/AllBalls/CountyRed';
+import ClubWhite from './SinglePages/AllBalls/ClubWhite';
+import TestWhite from './SinglePages/AllBalls/TestWhite';
+import SuperTestWhite from './SinglePages/AllBalls/SuperTestWhite';
+import CountyWhite from './SinglePages/AllBalls/CountyWhite';
 
 
 function App() {
@@ -87,7 +92,17 @@ function App() {
       <Route path="/bb20" element={<BB20/>}/>
       <Route path="/ms19" element={<MS19/>}/>
       <Route path="/ss25" element={<SS25/>}/>
-      <Route path="/rj14" element={<RJ14/>}/>            
+      <Route path="/rj14" element={<RJ14/>}/>   
+      <Route path="/clubRed" element={<ClubRed/>}/>
+      <Route path="/testRed" element={<TestRed/>}/>
+      <Route path="/superTest" element={<SuperTest/>}/>
+      <Route path="/countyRed" element={<CountyRed/>}/>  
+      <Route path="/clubWhite" element={<ClubWhite/>}/>
+      <Route path="/testWhite" element={<TestWhite/>}/>
+      <Route path="/superWhite" element={<SuperTestWhite/>}/>
+      <Route path="/countyWhite" element={<CountyWhite/>}/>  
+
+            
       {/* Sub Header      */}
       {/* for importing in every in every product  */}
       <Route path='/product/SubHeader' element={<SubHeader/>}/>    
