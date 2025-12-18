@@ -81,6 +81,8 @@ function App() {
         <Route path="/products/accessories" element={<Accessories/>}/> 
         <Route path="/featureAthlete" element={<FeaturedAth/>}/>
       {/* <Route path="/tennisbats" element={<TennisBats/>}/> */}
+
+      {/* routing in bat section */}
       <Route path="/scooptennis" element={<ScoopTennis/>}/>
       <Route path="/blackmamba" element={<BlackMamba/>}/>
       <Route path="/ak47tennis" element={<AK47Tennis/>}/>
