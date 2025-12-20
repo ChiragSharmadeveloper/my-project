@@ -11,8 +11,8 @@ const CountyRed = () => {
             
              const product = {
                 id: 1006,
-                title: "KW Leather Bats",
-                price: 4500,
+                title: "County Red {90 over}",
+                price: 520,
                 img: mainImage,
                 productDetails:" Lightweight kashmir willow Cricket Bat for all catogery " ,
               };

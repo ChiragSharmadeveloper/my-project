@@ -11,6 +11,7 @@ const AK47Tennis = () => {
       const product = {
       id: 1003,
       title: "AK-47 Hard Tennis Bat",
+      mrp:3500,
       price: 2500,
       img: mainImage,
       productDetails:" Lightweight kashmir willow Cricket Bat for all catogery " ,

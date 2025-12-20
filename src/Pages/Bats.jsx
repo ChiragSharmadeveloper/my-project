@@ -10,9 +10,10 @@ const Bats = () => {
     
   return (
     <>
+<div> 
+         <SubHeader/>
 
-       <div className="grid grid-cols-1 mt-32 sm:grid-cols-2 md:grid-cols-4 gap-8">
-         {/* <SubHeader/> */}
+       <div className="grid grid-cols-1 mt-8 sm:grid-cols-2 md:grid-cols-4 gap-8">
           
         {AllBats.map((item) => (
           <div>
@@ -31,6 +32,7 @@ const Bats = () => {
           </div>
 ))}
 </div> 
+</div>
 
     </>
   )

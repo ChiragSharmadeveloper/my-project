@@ -10,6 +10,7 @@ const SS25 = () => {
                             const product = {
                             id: 1011,
                             title: "SS-25 Leather Bats",
+                            mrp:9500,
                             price: 6500,
                             img: mainImage,
                             productDetails:" Lightweight kashmir willow Cricket Bat for all catogery " ,

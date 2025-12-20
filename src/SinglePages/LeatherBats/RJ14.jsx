@@ -10,6 +10,7 @@ const RJ14 = () => {
                                 const product = {
                                 id: 1012,
                                 title: "RJ-14 Leather Bats",
+                                 mrp:10500,
                                 price: 7000,
                                 img: mainImage,
                                 productDetails:" Lightweight kashmir willow Cricket Bat for all catogery " ,

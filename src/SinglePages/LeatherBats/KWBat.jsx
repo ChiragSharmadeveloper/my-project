@@ -12,6 +12,7 @@ const KWBat = () => {
         const product = {
         id: 1006,
         title: "KW Leather Bats",
+        mrp:6500,
         price: 4500,
         img: mainImage,
         productDetails:" Lightweight kashmir willow Cricket Bat for all catogery " ,

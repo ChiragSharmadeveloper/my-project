@@ -12,6 +12,7 @@ const SingleBlade = () => {
           const product = {
           id: 1004,
           title: "Single Blade Hard Tennis Bat",
+           mrp:4000,
           price: 2000,
           img: mainImage,
           productDetails:" Lightweight kashmir willow Cricket Bat for all catogery " ,

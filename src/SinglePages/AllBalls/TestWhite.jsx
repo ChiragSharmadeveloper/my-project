@@ -10,8 +10,8 @@ const TestWhite = () => {
                     
                      const product = {
                         id: 1006,
-                        title: "KW Leather Bats",
-                        price: 4500,
+                        title: "Test White { 40 over }",
+                        price: 300,
                         img: mainImage,
                         productDetails:" Lightweight kashmir willow Cricket Bat for all catogery " ,
                       };
@@ -49,7 +49,7 @@ const TestWhite = () => {
                                                     
                                                     <div className=''>
                                                         <h1 className='text-xl font-semibold'>{product.title}</h1>
-                                                        <h1 className='text-xl font-semibold'>{product.price}</h1>
+                                                        <h1 className='text-xl font-semibold'>{product.price}/-</h1>
                                                         <h1 className='text-xl font-semibold'>{product.productDetails}</h1>
                                           
                                           

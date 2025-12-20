@@ -10,6 +10,7 @@ const MS19 = () => {
                         const product = {
                         id: 1010,
                         title: "MS-19 Leather Bats",
+                        mrp:9500,
                         price: 6000,
                         img: mainImage,
                         productDetails:" Lightweight kashmir willow Cricket Bat for all catogery " ,

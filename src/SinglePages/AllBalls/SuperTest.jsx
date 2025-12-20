@@ -10,8 +10,8 @@ const SuperTest = () => {
         
          const product = {
             id: 1006,
-            title: "KW Leather Bats",
-            price: 4500,
+            title: "Super Test Red { 70 over}",
+            price: 400,
             img: mainImage,
             productDetails:" Lightweight kashmir willow Cricket Bat for all catogery " ,
           };

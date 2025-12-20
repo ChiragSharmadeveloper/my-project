@@ -74,10 +74,8 @@ const Home = () => {
     <>
       <Header/>
       <Banner/>
-
       <div className="py-8 mx-auto px-6">
         <h2 className="text-5xl font-bold mb-8 text-center">Featured Products</h2>
-      
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
         {HomeCard.map((item) => (
   <Link key={item.id} to={item.link}>
