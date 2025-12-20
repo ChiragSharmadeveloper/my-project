@@ -1,26 +1,25 @@
 import React, { useState, useContext } from 'react'
 import { CartContext } from "../../context/CartContext";
 import {Link } from 'react-router-dom'
-import {ballimages} from '../../Components/ProductList';
-import ball1 from '../../image/ball.jpg';
+import {padimages} from '../../Components/ProductList';
+import pad1 from '../../image/blackPads.jpg';
 
-const ClubRed = () => {
-  
-    const { addToCart } = useContext(CartContext);
-    const [mainImage, setMainImage] = useState(ballimages[0]);
+const TestWhitePad = () => {
 
-    const product = {
-        id: 1006,
-        title: "Club Red {20 overs}",
-        price: 240,
-        img: mainImage,
-        productDetails:" Lightweight kashmir willow Cricket Bat for all catogery " ,
-      };
+      const { addToCart } = useContext(CartContext);
+        const [mainImage, setMainImage] = useState(ballimages[0]);
+    
+        const product = {
+            id: 1006,
+            title: "KW Leather Bats",
+            price: 4500,
+            img: mainImage,
+            productDetails:" Lightweight kashmir willow Cricket Bat for all catogery " ,
+          };
 
   return (
     <>
-
-    <div className='flex'>
+      <div className='flex'>
        <div className="w-full max-w-md m-36">
                         
                         {/* Main Image */}
@@ -34,7 +33,7 @@ const ClubRed = () => {
                   
                         {/* Thumbnails */}
                         <div className="flex justify-between gap-4">
-                          {ballimages.slice(1).map((img, index) => (
+                          {padimages.slice(1).map((img, index) => (
                             <img
                               key={index}
                               src={img}
@@ -68,13 +67,14 @@ const ClubRed = () => {
          </div>             
       
                         <div className='flex  gap-20 mt-20 mx-[450px]'>
-                   <Link to="/blackmamba"><img src={ball1} alt={product.title} className='w-36 gap-20 h-32 rounded-lg cursor-pointer hover:scale-105 transition' /></Link>
-                   <Link to="/singleblade"><img src={ball1} alt={product.title} className='w-36 gap-20 h-32 rounded-lg cursor-pointer hover:scale-105 transition' /></Link>
-                   <Link to="/doubleblade"><img src={ball1} alt={product.title} className='w-36 gap-20 h-32 rounded-lg cursor-pointer hover:scale-105 transition' /></Link>
+                            
+                   <Link to="/blackmamba"><img src={pad1} alt={product.title} className='w-36 gap-20 h-32 rounded-lg cursor-pointer hover:scale-105 transition' /></Link>
+                   <Link to="/singleblade"><img src={pad1} alt={product.title} className='w-36 gap-20 h-32 rounded-lg cursor-pointer hover:scale-105 transition' /></Link>
+                   <Link to="/doubleblade"><img src={pad1} alt={product.title} className='w-36 gap-20 h-32 rounded-lg cursor-pointer hover:scale-105 transition' /></Link>
+                      
                       </div>
-
     </>
   )
 }
 
-export default ClubRed
+export default TestWhitePad

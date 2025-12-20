@@ -47,12 +47,8 @@ const DoubleBlade = () => {
                />
              
              ))}
-             
-             
      
      </div>
-     
-          
      
          </div>
      

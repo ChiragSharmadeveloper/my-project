@@ -102,6 +102,15 @@ export const ballimages = [
   ball4,
 ];
 
+export const padimages = [
+  pad1,
+  pad1,
+  pad1,
+  pad1,
+
+];
+
+
 export const AllBats = [
           {
             id:1,
