@@ -55,6 +55,7 @@ import ClubWhite from './SinglePages/AllBalls/ClubWhite';
 import TestWhite from './SinglePages/AllBalls/TestWhite';
 import SuperTestWhite from './SinglePages/AllBalls/SuperTestWhite';
 import CountyWhite from './SinglePages/AllBalls/CountyWhite';
+import TestWhitePad from './SinglePages/BattingPads/TestWhitePad';
 
 
 function App() {
@@ -102,7 +103,8 @@ function App() {
       <Route path="/clubWhite" element={<ClubWhite/>}/>
       <Route path="/testWhite" element={<TestWhite/>}/>
       <Route path="/superWhite" element={<SuperTestWhite/>}/>
-      <Route path="/countyWhite" element={<CountyWhite/>}/>  
+      <Route path="/countyWhite" element={<CountyWhite/>}/>
+      <Route path="/testWhitePad" element={<TestWhitePad/>}/>
 
             
       {/* Sub Header      */}

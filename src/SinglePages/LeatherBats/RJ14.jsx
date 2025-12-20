@@ -1,6 +1,8 @@
 import React, { useState, useContext } from 'react'
 import { CartContext } from "../../context/CartContext";
+import {Link } from 'react-router-dom'
 import { batimages } from '../../Components/ProductList';
+import similar1 from '../../image/bat13.jpg'
 
 const RJ14 = () => {
 
