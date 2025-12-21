@@ -1,4 +1,3 @@
-import React from 'react'
 import './App.css'
 import { Link, Routes, Route } from "react-router-dom";
 import Product from './Components/Product';
@@ -53,6 +52,35 @@ import TestWhite from './SinglePages/AllBalls/TestWhite';
 import SuperTestWhite from './SinglePages/AllBalls/SuperTestWhite';
 import CountyWhite from './SinglePages/AllBalls/CountyWhite';
 import TestWhitePad from './SinglePages/BattingPads/TestWhitePad';
+import PlayerEdWhite from './SinglePages/BattingPads/PlayerEdWhite';
+import PlayerEdBlue from './SinglePages/BattingPads/PlayerEdBlue';
+import LimitedEdWhite from './SinglePages/BattingPads/LimitedEdWhite';
+import LimitedEdBlue from './SinglePages/BattingPads/LimitedEdBlue';
+import ColorRBYpads from './SinglePages/BattingPads/ColorRBYpads';
+import MouldedPads from './SinglePages/BattingPads/MouldedPads';
+import ElitePads from './SinglePages/BattingPads/ElitePads';
+import EliteEdGloves from './SinglePages/AllGloves/EliteEdGloves';
+import VkEdBRO from './SinglePages/AllGloves/VkEdBRO';
+import WCedition from './SinglePages/AllGloves/WCedition';
+import YuviEdition from './SinglePages/AllGloves/YuviEdition'
+import TestEdRBY from './SinglePages/AllGloves/TestEdRBY';
+import LimitedEdition from './SinglePages/AllGloves/LimitedEdition';
+import TestWhiteEd from './SinglePages/AllGloves/TestWhiteEd';
+import DarkEdition from './SinglePages/AllGloves/DarkEdition';
+import ComboGloves from './SinglePages/AllGloves/ComboGloves';
+import ComboKitbag from './SinglePages/Kitbags/ComboKitbag';
+import DuffelKitbag from './SinglePages/Kitbags/DuffelKitbag';
+import MiniBagWheel from './SinglePages/Kitbags/MiniBagWheel';
+import EliteBag from './SinglePages/Kitbags/EliteBag';
+import SuperSelectbag from './SinglePages/Kitbags/SuperSelectbag';
+import LimitedEdBag from './SinglePages/Kitbags/LimitedEdBag';
+import EliteEdGuard from './SinglePages/AllGuards/EliteEdGuard';
+import ProEdGuard from './SinglePages/AllGuards/ProEdGuard';
+import PremiumEdition from './SinglePages/AllGuards/PremiumEdition';
+import ComboThighPad from './SinglePages/AllGuards/ComboThighPad';
+import AllGuardCombo from './SinglePages/AllGuards/AllGuardCombo';
+import BBChestGuard from './SinglePages/AllGuards/BBChestGuard';
+import BBElbowGuard from './SinglePages/AllGuards/BBElbowGuard';
 
 
 function App() {
@@ -89,7 +117,9 @@ function App() {
       <Route path="/bb20" element={<BB20/>}/>
       <Route path="/ms19" element={<MS19/>}/>
       <Route path="/ss25" element={<SS25/>}/>
-      <Route path="/rj14" element={<RJ14/>}/>   
+      <Route path="/rj14" element={<RJ14/>}/>
+
+      {/* Routing in balls section   */}
       <Route path="/clubRed" element={<ClubRed/>}/>
       <Route path="/testRed" element={<TestRed/>}/>
       <Route path="/superTest" element={<SuperTest/>}/>
@@ -98,9 +128,50 @@ function App() {
       <Route path="/testWhite" element={<TestWhite/>}/>
       <Route path="/superWhite" element={<SuperTestWhite/>}/>
       <Route path="/countyWhite" element={<CountyWhite/>}/>
-      <Route path="/testWhitePad" element={<TestWhitePad/>}/>
 
-            
+      {/* Routing in pads section  */}
+      <Route path="/testWhitePad" element={<TestWhitePad/>}/>
+      <Route path="/playerEdwhite" element={<PlayerEdWhite/>}/>
+      <Route path="/playerEdblue" element={<PlayerEdBlue/>}/>
+      <Route path="/limitedEdwhite" element={<LimitedEdWhite/>}/>
+      <Route path="/limitedEdblue" element={<LimitedEdBlue/>}/>
+      <Route path="/colorRBYpads" element={<ColorRBYpads/>}/>
+      <Route path="/mouldedPads" element={<MouldedPads/>}/>
+      <Route path="/elitePads" element={<ElitePads/>}/>
+
+      {/* Routing in gloves section  */}
+      <Route path="/eliteGloves" element={<EliteEdGloves/>}/>
+      <Route path="/vkEdBRO" element={<VkEdBRO/>}/>
+      <Route path="/wcedition" element={<WCedition/>}/>
+      <Route path="/yuviEdition" element={<YuviEdition/>}/>
+      <Route path="/testEdRBY" element={<TestEdRBY/>}/>
+      <Route path="/limitedEdition" element={<LimitedEdition/>}/>
+      <Route path="/testWhiteEd" element={<TestWhiteEd/>}/>
+      <Route path="/darkEdition" element={<DarkEdition/>}/>
+      <Route path="/comboGloves" element={<ComboGloves/>}/>
+
+      {/* Routing in kitbags section  */}
+      <Route path="combokitbag" element={<ComboKitbag/>}/>
+      <Route path="/duffelkitbag" element={<DuffelKitbag/>}/>
+      <Route path="/miniBagWheel" element={<MiniBagWheel/>}/>
+      <Route path="/elitebags" element={<EliteBag/>}/>
+      <Route path="/superSelectBag" element={<SuperSelectbag/>}/>
+      <Route path="/limitedEdBag" element={<LimitedEdBag/>}/>
+
+      {/* Routing in guards section   */}
+      <Route path="/eliteEdGuard" element={<EliteEdGuard/>}/>
+      <Route path="/proEdGuard" element={<ProEdGuard/>}/>
+      <Route path="/premiumEdition" element={<PremiumEdition/>}/>
+      <Route path="/comboThighpad" element={<ComboThighPad/>}/>
+      <Route path="/allGuardcombo" element={<AllGuardCombo/>}/>
+      <Route path="/bbChestGuard" element={<BBChestGuard/>}/>
+      <Route path="/bbElbowGuard" element={<BBElbowGuard/>}/>
+
+
+
+
+
+
       {/* Sub Header      */}
       {/* for importing in every in every product  */}
       <Route path='/product/SubHeader' element={<SubHeader/>}/>    

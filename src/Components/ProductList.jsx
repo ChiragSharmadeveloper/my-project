@@ -21,12 +21,12 @@ import kitbag1 from '../image/bag1.jpg';
 import kitbag2 from '../image/bag2.jpg';
 import kitbag3 from '../image/bag3.jpg';
 import kitbag4 from '../image/bag4.jpg';
-import ball1 from '../image/ball.jpg'
-import ball2 from '../image/ball.jpg'
-import ball3 from '../image/ball.jpg'
-import ball4 from '../image/ball.jpg'
-import ball5 from '../image/ball.jpg'
-import guard1 from '../image/guard1.webp'
+import ball1 from '../image/ball.jpg';
+import ball2 from '../image/ball.jpg';
+import ball3 from '../image/ball.jpg';
+import ball4 from '../image/ball.jpg';
+import ball5 from '../image/ball.jpg';
+import guard1 from '../image/guard1.webp';
 
 
 export const productlist1 = [
@@ -95,6 +95,29 @@ export const batimages = [
           bat4,
 ];
 
+export const padimages = [
+  pad1,
+  pad1,
+  pad1,
+  pad1,
+
+];
+
+export const glovesimg = [
+  gloves1,
+  gloves1,
+  gloves1,
+  gloves1,
+
+]
+
+export const kitimages = [
+  kitbag4,
+  kitbag2,
+  kitbag3,
+  kitbag1,
+];
+
 export const ballimages = [
   ball1,
   ball2,
@@ -102,12 +125,11 @@ export const ballimages = [
   ball4,
 ];
 
-export const padimages = [
-  pad1,
-  pad1,
-  pad1,
-  pad1,
-
+export const guardimages = [
+  guard1,
+  guard1,
+  guard1,
+  guard1,
 ];
 
 
@@ -245,57 +267,57 @@ export const AllBats = [
               id:1,
               title:"Batting Pads",
               img:pad1,
-              price:"1800"
-              // link:"/bats",
+              price:"1800",
+              link:"/testWhitePad",
             },
             {
               id:2,
               title:"Keeping Pads",
               img:pad2,
-              price:"1800",
-              // link:"/balls",
+              price:1800,
+              link:"/playerEdWhite",
             },
             {
               id:3,
               title:"Thigh Pads",
               img:pad3,
-              price:"1800",
-              // link:"/bats",
+              price:1800,
+              link:"/playerEdblue",
             },
             {
               id:4,
               title:"Fielding Pads",
               img:pad4,
               price:"1800",
-              // link:"/balls",
+              link:"/limitedEdwhite",
             },
             {
               id:5,
               title:"Fielding Pads",
               img:pad4,
               price:"1800",
-              // link:"/balls",
+              link:"/limitedEdblue",
             },
             {
               id:6,
               title:"Fielding Pads",
               img:pad4,
               price:"1800",
-              // link:"/balls",
+              link:"/colorRBYpads",
             },
             {
               id:7,
               title:"Fielding Pads",
               img:pad4,
               price:"1800",
-              // link:"/balls",
+              link:"/mouldedPads",
             },
             {
               id:8,
               title:"Fielding Pads",
               img:pad4,
               price:"1800",
-              // link:"/balls",
+              link:"/elitePads",
             },
           ]
 
@@ -305,29 +327,65 @@ export const AllBats = [
                 title:"Batting Gloves",
                 img:gloves1,
                 price:"1000",
-                // link:"/bats",
+                link:"/eliteGloves",
               },
               {
                 id:2,
                 title:"Keeping Gloves",
                 img:gloves2,
                 price:"1500",
-                // link:"/balls",
+                link:"/vkEdBRO",
               },
               {
                 id:3,
                 title:"Premium Gloves",
                 img:gloves3,
                 price:"2000",
-                // link:"/bats",
+                link:"/wcedition",
               },
               {
                 id:4,
                 title:"Kids Gloves",
                 img:gloves4,
                 price:"2500",
-                // link:"/balls",
+                link:"/yuviEdition",
               },
+              {
+                id:5,
+                title:"Kids Gloves",
+                img:gloves4,
+                price:"2500",
+                link:"/testEdRBY",
+              },
+              {
+                id:6,
+                title:"Kids Gloves",
+                img:gloves4,
+                price:"2500",
+                link:"/limitedEdition",
+              },
+              {
+                id:7,
+                title:"Kids Gloves",
+                img:gloves4,
+                price:"2500",
+                link:"/testWhiteEd",
+              },
+              {
+                id:8,
+                title:"Kids Gloves",
+                img:gloves4,
+                price:"2500",
+                link:"/darkEdition",
+              },
+              {
+                id:9,
+                title:"Kids Gloves",
+                img:gloves4,
+                price:"2500",
+                link:"/comboGloves",
+              },
+
             ]
     
   export const Allkitbags = [
@@ -335,29 +393,43 @@ export const AllBats = [
                 id:1,
                 title:"Kit Bags",
                 img:kitbag1,
-                price:"1000"
-                // link:"/bats",
+                price:"1000",
+                link:"/combokitbag",
               },
               {
                 id:2,
                 title:"Back Packs",
                 img:kitbag2,
                 price:"1500",
-                // link:"/balls",
+                link:"/duffelkitbag",
               },
               {
                 id:3,
                 title:"Duffle Bags",
                 img:kitbag3,
                 price:"2000",
-                // link:"/bats",
+                link:"/miniBagWheel",
               },
               {
                 id:4,
                 title:"Other Bags",
                 img:kitbag4,
                 price:"2500",
-                // link:"/balls",
+                link:"/elitebags",
+              },
+              {
+                id:5,
+                title:"Other Bags",
+                img:kitbag4,
+                price:"2500",
+                link:"/superSelectBag",
+              },
+              {
+                id:6,
+                title:"Other Bags",
+                img:kitbag4,
+                price:"2500",
+                link:"/limitedEdBag",
               },
             ]
 
@@ -426,28 +498,49 @@ export const AllBats = [
                   id:1,
                   title:"Elbow Guards",
                   img:guard1,
-                  price:"500"
-                  // link:"/bats",
+                  price:"500",
+                  link:"/eliteEdGuard",
                 },
                 {
                   id:2,
                   title:"Leg Guards",
                   img:guard1,
-                  price:"600"
-                  // link:"/balls",
+                  price:"600",
+                  link:"/proEdGuard",
                 },
                 {
                   id:3,
                   title:"Thigh Guards",
                   img:guard1,
-                  price:"700"
-                  // link:"/bats",
+                  price:"700",
+                  link:"/premiumEdition",
                 },
                 {
                   id:4,
                   title:"Abdominal Guards",
                   img:guard1,
-                  price:"800"
-                  // link:"/balls",
+                  price:"800",
+                  link:"/comboThighpad",
+                },
+                 {
+                  id:5,
+                  title:"Abdominal Guards",
+                  img:guard1,
+                  price:"800",
+                  link:"/allGuardcombo",
+                },
+                 {
+                  id:6,
+                  title:"Abdominal Guards",
+                  img:guard1,
+                  price:"800",
+                  link:"/bbChestGuard",
+                },
+                 {
+                  id:7,
+                  title:"Abdominal Guards",
+                  img:guard1,
+                  price:"800",
+                  link:"/bbElbowGuard",
                 },
               ]

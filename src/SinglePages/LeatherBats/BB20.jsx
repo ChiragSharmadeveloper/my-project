@@ -11,9 +11,9 @@ const BB20 = () => {
                 
                     const product = {
                     id: 1908,
-                    title: "BB-20 Leather Bats",
-                    mrp:15999.00,
-                    price:9999.00,
+                    title: "BB-20  Leather Bats",
+                    mrp:7500,
+                    price: 5500,
                     img: mainImage,
                     productDetails:" Lightweight kashmir willow Cricket Bat for all catogery " ,
                   };
