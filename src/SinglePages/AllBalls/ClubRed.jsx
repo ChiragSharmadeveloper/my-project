@@ -10,7 +10,7 @@ const ClubRed = () => {
     const [mainImage, setMainImage] = useState(ballimages[0]);
 
     const product = {
-        id: 1006,
+        id: 1001,
         title: "KW Leather Bats",
         price: 4500,
         img: mainImage,

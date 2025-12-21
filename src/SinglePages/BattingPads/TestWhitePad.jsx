@@ -7,11 +7,12 @@ import pad1 from '../../image/blackPads.jpg';
 const TestWhitePad = () => {
 
       const { addToCart } = useContext(CartContext);
-        const [mainImage, setMainImage] = useState(ballimages[0]);
+      const [mainImage, setMainImage] = useState(padimages[0]);
     
         const product = {
-            id: 1006,
-            title: "KW Leather Bats",
+            id: 1501,
+            title: "Test White Pads",
+            mrp:5000,
             price: 4500,
             img: mainImage,
             productDetails:" Lightweight kashmir willow Cricket Bat for all catogery " ,
@@ -19,6 +20,7 @@ const TestWhitePad = () => {
 
   return (
     <>
+
       <div className='flex'>
        <div className="w-full max-w-md m-36">
                         
@@ -51,6 +53,7 @@ const TestWhitePad = () => {
                       <div className='mt-32 w-[40%] mr-5 text-start space-y-3'>
         <h1 className='text-3xl  font-bold '>{product.title}</h1>
         <h1 className='text-3xl font-bold  '>{product.productDetails}</h1>
+        <h1 className='text-4xl font-bold text-red-500 line-through'> ₹ {product.mrp}</h1>
         <h1 className='text-4xl font-bold text-red-500'> ₹ {product.price}</h1>
 
          {/* Add to Cart */}

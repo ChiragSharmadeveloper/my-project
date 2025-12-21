@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 
 const SubHeader = () => {
   return (
+    
     // navbar for easy access
-     
     <div className='mb-40'>
         <ul className="flex flex-wrap gap-4 p-1 ml-44  pl-2 font-bold text-black bg-gray-300 rounded-xl
                 w-full
