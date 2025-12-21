@@ -9,7 +9,7 @@ const KB26Bat = () => {
         const [mainImage, setMainImage] = useState(batimages[0]);
             
                 const product = {
-                id: 1008,
+                id: 1907,
                 title: "Kb-26 Leather Bats",
                     mrp:7000,
                 price: 5000,

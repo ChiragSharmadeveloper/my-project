@@ -10,7 +10,7 @@ const MS19 = () => {
                 const [mainImage, setMainImage] = useState(batimages[0]);
                     
                         const product = {
-                        id: 1010,
+                        id: 1909,
                         title: "MS-19 Leather Bats",
                         mrp:9500,
                         price: 6000,

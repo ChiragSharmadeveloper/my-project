@@ -9,7 +9,7 @@ const BB20 = () => {
             const [mainImage, setMainImage] = useState(batimages[0]);
                 
                     const product = {
-                    id: 1009,
+                    id: 1908,
                     title: "BB-20  Leather Bats",
                     mrp:7500,
                     price: 5500,
