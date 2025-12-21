@@ -10,8 +10,8 @@ const ClubWhite = () => {
                 
                  const product = {
                     id: 1006,
-                    title: "KW Leather Bats",
-                    price: 4500,
+                    title: "Club White {20 overs}",
+                    price: 250,
                     img: mainImage,
                     productDetails:" Lightweight kashmir willow Cricket Bat for all catogery " ,
                   };

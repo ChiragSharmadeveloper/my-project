@@ -12,6 +12,7 @@ const ScoopTennis = () => {
   const product = {
     id: 1001,
     title: "Kashmir Willow Bat",
+    mrp:5499,
     price: 3499,
     img: mainImage,
     productDetails:" Lightweight kashmir willow Cricket Bat for all catogery " ,

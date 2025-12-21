@@ -11,6 +11,7 @@ const BlackMamba = () => {
     const product = {
     id: 1002,
     title: "Black Mamba Hard Tennis Bat",
+    mrp:4500,
     price: 3000,
     img: mainImage,
     productDetails:" Lightweight kashmir willow Cricket Bat for all catogery " ,

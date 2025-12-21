@@ -32,11 +32,40 @@ export const CartProvider = ({children}) => {
     0
   );
 
+// For quantity
+  // Increasing Quantity
+    const increase = (id) => {
+  setCartItems(prevItems =>
+    prevItems.map(item =>
+      item.id === id
+        ? { ...item, quantity: item.quantity + 1 }
+        : item
+    )
+  );
+};
+
+// Decreasing quantity
+const decrease = (id) => {
+  setCartItems(prevItems =>
+    prevItems.map(item =>{
+      if (item.id === id) {
+        if (item.quantity === 1) {
+          removeFromCart(id);
+          return null;
+        }
+        return { ...item, quantity: item.quantity - 1 };
+      }
+      return item;
+    }).filter(Boolean)
+  );
+};
+
+
 
   return (
     <>
 
-    <CartContext.Provider value={{ cartItems, addToCart, removeFromCart, getTotalPrice, totalCount1 }}>
+    <CartContext.Provider value={{ cartItems, addToCart, removeFromCart, getTotalPrice, totalCount1,increase ,decrease }}>
       {children}
     </CartContext.Provider> 
     </>

@@ -11,6 +11,7 @@ const RK06 = () => {
             const product = {
             id: 1007,
             title: "RK-06 Leather Bats",
+           mrp:6500,
             price: 4500,
             img: mainImage,
             productDetails:" Lightweight kashmir willow Cricket Bat for all catogery " ,

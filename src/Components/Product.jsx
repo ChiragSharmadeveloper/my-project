@@ -13,7 +13,7 @@ const Product = () => {
                 w-full
                 sm:gap-4 sm:pl-2
                 md:gap-10 md:pl-6
-                lg:gap-22 lg:pl-6 lg:w-[1200px] mb-2.5 fixed z-1000" >
+                lg:gap-22 lg:pl-6 lg:w-[1200px] mb-2.5 " >
         <Link to="/products/bats" className="hover:text-red-500"><li>Bats</li></Link>
         <Link to="/products/pads" className="hover:text-red-500"><li>Cricket Pads</li></Link>
         <Link to="/products/gloves" className="hover:text-red-500"><li>Gloves</li></Link>

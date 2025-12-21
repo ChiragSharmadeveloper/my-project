@@ -10,9 +10,9 @@ const ClubRed = () => {
     const [mainImage, setMainImage] = useState(ballimages[0]);
 
     const product = {
-        id: 1001,
-        title: "KW Leather Bats",
-        price: 4500,
+        id: 1006,
+        title: "Club Red {20 overs}",
+        price: 240,
         img: mainImage,
         productDetails:" Lightweight kashmir willow Cricket Bat for all catogery " ,
       };

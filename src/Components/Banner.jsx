@@ -26,6 +26,7 @@ const Banner = () => {
   return (
     <>
        {/* HERO SLIDER */}
+       
       <section id="home" className="pt-20 mt-2 w-full">
         <div className="relative h-[500px] overflow-hidden">
           <div
