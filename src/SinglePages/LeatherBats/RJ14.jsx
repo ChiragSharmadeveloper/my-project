@@ -3,6 +3,7 @@ import { CartContext } from "../../context/CartContext";
 import {Link } from 'react-router-dom'
 import { batimages } from '../../Components/ProductList';
 import similar1 from '../../image/bat13.jpg'
+import SubHeader from '../../context/SubHeader';
 
 const RJ14 = () => {
 
@@ -10,10 +11,10 @@ const RJ14 = () => {
                         const [mainImage, setMainImage] = useState(batimages[0]);
                             
                                 const product = {
-                                id: 1012,
+                                id: 1910,
                                 title: "RJ-14 Leather Bats",
-                                 mrp:10500,
-                                price: 7000,
+                                 mrp:35999.00,
+                                price: 24999.00,
                                 img: mainImage,
                                 productDetails:" Lightweight kashmir willow Cricket Bat for all catogery " ,
                               };
@@ -21,6 +22,9 @@ const RJ14 = () => {
   return (
 
     <>
+    <div>
+      <SubHeader/>
+    </div>
 
   <div className='flex' >
      <div className="w-full max-w-md m-32">

@@ -39,7 +39,7 @@ const totalCount1 = useContext(CartContext).totalCount1;
       <Link to="/contact"><li className="hover:text-blue-600">Contact</li></Link>
             
           </ul>
-    <Link to="/checkout">  <RiShoppingCart2Line  className='text-5xl text-right text-black relative'/> <span  className="absolute flex items-center justify-center font-semibold -top-1 mt-7.5   text-black text-md w-5 h-5 text-right z-10 inset-[1040px]">{totalCount1}</span>  </Link>
+    <Link to="/checkout">  <RiShoppingCart2Line  className='text-5xl text-right text-black relative'/> <span  className="absolute flex font-semibold -top-1 mt-7.5 text-black text-md w-5 h-5 z-10 inset-[1040px]">{totalCount1}</span>  </Link>
 
 
           {/* Profile Dropdown */}

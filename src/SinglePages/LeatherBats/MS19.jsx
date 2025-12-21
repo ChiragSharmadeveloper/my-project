@@ -3,6 +3,7 @@ import { CartContext } from "../../context/CartContext";
 import {Link } from 'react-router-dom'
 import { batimages } from '../../Components/ProductList';
 import similar1 from '../../image/bat13.jpg'
+import SubHeader from '../../context/SubHeader';
 
 const MS19 = () => {
 
@@ -10,16 +11,19 @@ const MS19 = () => {
                 const [mainImage, setMainImage] = useState(batimages[0]);
                     
                         const product = {
-                        id: 1010,
+                        id: 1909,
                         title: "MS-19 Leather Bats",
-                        mrp:9500,
-                        price: 6000,
+                        mrp:19999.00,
+                        price: 15999.00,
                         img: mainImage,
                         productDetails:" Lightweight kashmir willow Cricket Bat for all catogery " ,
                       };
 
   return (
     <>
+    <div>
+      <SubHeader/>
+    </div>
 <div className='flex' >
      <div className="w-full max-w-md m-32">
       

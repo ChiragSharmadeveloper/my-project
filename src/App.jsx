@@ -36,10 +36,7 @@ import { CartProvider } from "./context/CartContext";
 import Cart from './Components/Cart';
 import SubHeader from './context/SubHeader';
 import ScoopTennis from './SinglePages/TennisBats/ScoopTennis';
-import BlackMamba from './SinglePages/TennisBats/BlackMamba';
-import AK47Tennis from './SinglePages/TennisBats/AK47Tennis';
 import SingleBlade from './SinglePages/TennisBats/SingleBlade';
-import DoubleBlade from './SinglePages/TennisBats/DoubleBlade';
 import KWBat from './SinglePages/LeatherBats/KWBat';
 import RK06 from './SinglePages/LeatherBats/RK06';
 import KB26Bat from './SinglePages/LeatherBats/KB26Bat';
@@ -85,10 +82,7 @@ function App() {
 
       {/* routing in bat section */}
       <Route path="/scooptennis" element={<ScoopTennis/>}/>
-      <Route path="/blackmamba" element={<BlackMamba/>}/>
-      <Route path="/ak47tennis" element={<AK47Tennis/>}/>
       <Route path="/singleblade" element={<SingleBlade/>}/>
-      <Route path="doubleblade" element={<DoubleBlade/>}/>
       <Route path="/kwbat" element={<KWBat/>}/>
       <Route path="/rk06" element={<RK06/>}/>
       <Route path="/kb26" element={<KB26Bat/>}/>

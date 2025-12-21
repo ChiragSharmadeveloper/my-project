@@ -1,12 +1,15 @@
 import React from 'react'
 import {AllPads} from '../Components/ProductList'
 import { Link } from 'react-router-dom';
+import SubHeader from '../context/SubHeader';
 
 const Pads = () => {
 
     return (
     <>
-      
+     <div>
+       <SubHeader/>
+    </div>
        <div className="grid grid-cols-1 mt-24 sm:grid-cols-2 md:grid-cols-4 gap-8">
         {AllPads.map((item) => (
   <Link key={item.id} to={item.link}>

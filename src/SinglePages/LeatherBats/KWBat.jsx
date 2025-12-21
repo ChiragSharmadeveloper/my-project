@@ -3,6 +3,7 @@ import { CartContext } from "../../context/CartContext";
 import {Link} from 'react-router-dom';
 import { batimages } from '../../Components/ProductList';
 import similar1 from '../../image/bat13.jpg';
+import SubHeader from '../../context/SubHeader';
 
 const KWBat = () => {
 
@@ -12,14 +13,17 @@ const KWBat = () => {
         const product = {
         id: 1006,
         title: "KW Leather Bats",
-        mrp:6500,
-        price: 4500,
+        mrp:4999.00,
+        price: 3500,
         img: mainImage,
         productDetails:" Lightweight kashmir willow Cricket Bat for all catogery " ,
       };
 
   return (
     <>
+    <div>
+      <SubHeader/>
+    </div>
 
      <div className='flex' >
      <div className="w-full max-w-md m-32">

@@ -1,15 +1,20 @@
 import React from "react";
 import { Link } from 'react-router-dom'
 import { productlist1 } from "./ProductList";
+import SubHeader from "../context/SubHeader";
 
 const Product = () => {
 
   return (
     <>
+    <div>
+       <SubHeader/>
+
+    </div>
 
       {/* PRODUCT CARDS */}
       <section id="products" className="py-20 max-w-7xl mx-auto w-sm-[300px] w-md-[500px] w-lg-full px-6">
-        <ul className="mt-2 flex flex-wrap gap-4 p-1 pl-2 font-bold text-black bg-gray-300 rounded-xl
+        {/* <ul className="mt-2 flex flex-wrap gap-4 p-1 pl-2 font-bold text-black bg-gray-300 rounded-xl
                 w-full
                 sm:gap-4 sm:pl-2
                 md:gap-10 md:pl-6
@@ -22,7 +27,7 @@ const Product = () => {
         <Link to="/products/guards" className="hover:text-red-500"><li>All Guards</li></Link>
         <Link to="/products/clothing" className="hover:text-red-500"><li>clothing</li></Link>
         <Link to="/products/accessories" className="hover:text-red-500"><li>Accessories</li></Link>
-        </ul>
+        </ul> */}
 
         <div className="grid mt-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           {productlist1.map((item) => (

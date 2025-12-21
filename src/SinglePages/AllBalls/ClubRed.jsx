@@ -10,7 +10,7 @@ const ClubRed = () => {
     const [mainImage, setMainImage] = useState(ballimages[0]);
 
     const product = {
-        id: 1006,
+        id: 106,
         title: "Club Red {20 overs}",
         price: 240,
         img: mainImage,

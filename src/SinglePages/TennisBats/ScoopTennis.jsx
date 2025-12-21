@@ -3,6 +3,7 @@ import { CartContext } from "../../context/CartContext";
 import {Link} from 'react-router-dom';
 import { batimages } from '../../Components/ProductList';
 import similar1 from '../../image/bat13.jpg';
+import SubHeader from '../../context/SubHeader';
 
 const ScoopTennis = () => {
 
@@ -10,10 +11,10 @@ const ScoopTennis = () => {
   const [mainImage, setMainImage] = useState(batimages[0]);
 
   const product = {
-    id: 1001,
-    title: "Kashmir Willow Bat",
-    mrp:5499,
-    price: 3499,
+    id: 1901,
+    title: "Elite Scoop Bat",
+    mrp:5999.00,
+    price: 3999.00,
     img: mainImage,
     productDetails:" Lightweight kashmir willow Cricket Bat for all catogery " ,
     Size:[{ label: "Kids", stock: 10 },
@@ -24,6 +25,9 @@ const ScoopTennis = () => {
 
   return (
     <>
+    <div>
+      <SubHeader/>
+    </div>
 <div className='flex' >
      <div className="w-full max-w-md m-32">
       

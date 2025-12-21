@@ -4,6 +4,7 @@ import accessories1 from '../image/G2.jpg'
 import accessories2 from '../image/G2.jpg'
 import accessories3 from '../image/G2.jpg'
 import accessories4 from '../image/G2.jpg'
+import SubHeader from '../context/SubHeader'
 
 
 const Accessories = () => {
@@ -37,6 +38,10 @@ const Accessories = () => {
 
     return (
     <>
+     <div>
+       <SubHeader/>
+
+    </div>
 
     <div className="grid grid-cols-1 mt-24 sm:grid-cols-2 md:grid-cols-4 gap-8">
         {AllPads.map((item) => (

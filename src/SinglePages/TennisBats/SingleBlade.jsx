@@ -3,6 +3,7 @@ import { CartContext } from "../../context/CartContext";
 import {Link } from 'react-router-dom'
 import { batimages } from '../../Components/ProductList';
 import similar1 from '../../image/bat13.jpg'
+import SubHeader from '../../context/SubHeader';
 
 const SingleBlade = () => {
 
@@ -10,17 +11,19 @@ const SingleBlade = () => {
     const [mainImage, setMainImage] = useState(batimages[0]);
       
           const product = {
-          id: 1004,
-          title: "Single Blade Hard Tennis Bat",
-           mrp:4000,
-          price: 2000,
+          id: 1902,
+          title: "Limited Scoop Bat",
+           mrp:6999.00,
+          price: 5499.00,
           img: mainImage,
           productDetails:" Lightweight kashmir willow Cricket Bat for all catogery " ,
         };
 
   return (
     <>
-
+  <div>
+    <SubHeader/>
+  </div>
       <div className='flex' >
            <div className="w-full max-w-md m-32">
             

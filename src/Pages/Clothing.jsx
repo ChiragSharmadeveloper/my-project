@@ -4,6 +4,7 @@ import clothing1 from '../image/clothing1.webp'
 import clothing2 from '../image/clothing1.webp'
 import clothing3 from '../image/clothing1.webp'
 import clothing4 from '../image/clothing1.webp'
+import SubHeader from '../context/SubHeader'
 
 
 const Clothing = () => {
@@ -37,7 +38,9 @@ const Clothing = () => {
 
   return (
     <>
-
+   <div>
+       <SubHeader/>
+    </div>
       <div className="grid grid-cols-1 mt-24 sm:grid-cols-2 md:grid-cols-4 gap-8">
         {AllPads.map((item) => (
   <Link key={item.id} to={item.link}>
